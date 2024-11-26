@@ -1,0 +1,63 @@
+{
+  "name": "@ogea12/api-types",
+  "description": "Description des types utilisés dans l'API de l'OGEA 12",
+  "version": "1.0.0",
+  "engines": {
+    "node": ">=20.17.0"
+  },
+  "type": "module",
+  "files": [
+    "types/api.d.ts"
+  ],
+  "exports": {
+    ".": "./types/api.d.ts"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "generate": "npx openapi-typescript openapi.json -o types/api.d.ts --root-types",
+    "release": "npx release-it"
+  },
+  "homepage": "https://github.com/ogea12/api-types#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ogea12/api-types.git"
+  },
+  "devDependencies": {
+    "@adonisjs/eslint-config": "^2.0.0-beta.7",
+    "@adonisjs/prettier-config": "^1.4.0",
+    "@adonisjs/tsconfig": "^1.4.0",
+    "@swc/core": "^1.9.3",
+    "@types/node": "^22.10.0",
+    "eslint": "^9.15.0",
+    "openapi-typescript": "^7.4.3",
+    "prettier": "^3.4.1",
+    "release-it": "^17.10.0",
+    "typescript": "^5.7.2"
+  },
+  "author": "OGEA 12",
+  "license": "MIT",
+  "keywords": [
+    "ogea12",
+    "api",
+    "openapi"
+  ],
+  "prettier": "@adonisjs/prettier-config",
+  "publishConfig": {
+    "access": "public",
+    "tag": "latest"
+  },
+  "release-it": {
+    "git": {
+      "commitMessage": "chore(release): ${version}",
+      "tagAnnotation": "v${version}",
+      "tagName": "v${version}"
+    },
+    "github": {
+      "release": true,
+      "releaseName": "v${version}",
+      "web": true
+    }
+  }
+}
