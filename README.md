@@ -12,11 +12,15 @@
 
 ## Premiers pas
 
+### Installation
+
 Pour utiliser le package, vous devez d'abord l'intégrer dans votre projet.
 
 ```bash
 npm install @ogea12/api-types
 ```
+
+### Usage
 
 Ce dernier peut être ensuite couplé avec les librairies [`openapi-fetch`](https://www.npmjs.com/package/openapi-fetch) et [`openapi-react-query`](https://www.npmjs.com/package/openapi-react-query) afin de bénéficier d'un typage sûr et d'une autocomplétion améliorée pour éviter les erreurs syntaxiques.
 
