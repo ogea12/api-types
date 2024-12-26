@@ -1,5 +1,5 @@
 {
-  "extends": "@adonisjs/tsconfig/tsconfig.package.json",
+  "extends": "@ogea12/tsconfig/tsconfig.package",
   "compilerOptions": {
     "module": "ESNext",
     "moduleResolution": "Bundler",

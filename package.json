@@ -16,6 +16,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
+    "typecheck": "tsc --noEmit",
     "generate": "npx openapi-typescript openapi.json -o types/api.d.ts --root-types",
     "release": "npx release-it"
   },
@@ -25,9 +26,9 @@
     "url": "git+https://github.com/ogea12/api-types.git"
   },
   "devDependencies": {
-    "@adonisjs/eslint-config": "^2.0.0-beta.7",
-    "@adonisjs/prettier-config": "^1.4.0",
-    "@adonisjs/tsconfig": "^1.4.0",
+    "@ogea12/eslint-config": "^1.0.0",
+    "@ogea12/prettier-config": "^1.0.1",
+    "@ogea12/tsconfig": "^1.0.1",
     "@swc/core": "^1.9.3",
     "@types/node": "^22.10.0",
     "eslint": "^9.15.0",
@@ -43,7 +44,7 @@
     "api",
     "openapi"
   ],
-  "prettier": "@adonisjs/prettier-config",
+  "prettier": "@ogea12/prettier-config",
   "publishConfig": {
     "access": "public",
     "tag": "latest"

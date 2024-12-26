@@ -1,5 +1,5 @@
-import { configPkg } from '@adonisjs/eslint-config'
+import { configure } from '@ogea12/eslint-config'
 
-export default configPkg({
+export default configure({
   ignores: ['types/**/*'],
 })
