@@ -12171,6 +12171,8 @@ export interface components {
             NumeroIntracom: string | null;
             /** @description Le code APE (NAF). */
             Ape: string | null;
+            /** @description L'identifiant GererMesAffaires. */
+            IdGererMesAffaires: string | null;
             /** @description Le code. */
             Code: string;
             Acces: components["schemas"]["Acces"];
@@ -12799,6 +12801,8 @@ export interface components {
             Mail: string | null;
             /** @description Le numéro de téléphone. */
             Telephone: string | null;
+            /** @description L'identifiant GererMesAffaires. */
+            IdGererMesAffaires: string | null;
             /**
              * Format: email
              * @description L'identifiant de connexion.
