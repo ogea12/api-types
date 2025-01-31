@@ -3270,6 +3270,56 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/v1/calliope/utilisateur/dossiers/{IdDossier}/clients/{IdClient}": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                /** @description L'identifiant du dossier à manipuler. */
+                IdDossier: components["parameters"]["IdDossier"];
+                /** @description L'identifiant du client à manipuler. */
+                IdClient: components["parameters"]["IdClient"];
+            };
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post?: never;
+        /** @description Supprime un client pour un dossier. */
+        delete: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description L'identifiant du dossier à manipuler. */
+                    IdDossier: components["parameters"]["IdDossier"];
+                    /** @description L'identifiant du client à manipuler. */
+                    IdClient: components["parameters"]["IdClient"];
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description No Content */
+                204: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content?: never;
+                };
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                404: components["responses"]["NotFound"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/v1/calliope/utilisateur/dossiers/{IdDossier}/clients-moraux": {
         parameters: {
             query?: never;
@@ -8607,6 +8657,56 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/v1/calliope/utilisateur/dossiers/{IdDossier}/fournisseurs/{IdFournisseur}": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                /** @description L'identifiant du dossier à manipuler. */
+                IdDossier: components["parameters"]["IdDossier"];
+                /** @description L'identifiant du fournisseur à manipuler. */
+                IdFournisseur: components["parameters"]["IdFournisseur"];
+            };
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post?: never;
+        /** @description Supprime un fournisseur pour un dossier. */
+        delete: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description L'identifiant du dossier à manipuler. */
+                    IdDossier: components["parameters"]["IdDossier"];
+                    /** @description L'identifiant du fournisseur à manipuler. */
+                    IdFournisseur: components["parameters"]["IdFournisseur"];
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description No Content */
+                204: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content?: never;
+                };
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                404: components["responses"]["NotFound"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/v1/calliope/utilisateur/dossiers/{IdDossier}/fournisseurs-moraux": {
         parameters: {
             query?: never;
@@ -9244,6 +9344,56 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/v1/calliope/utilisateur/dossiers/{IdDossier}/articles/{IdArticle}": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                /** @description L'identifiant du dossier à manipuler. */
+                IdDossier: components["parameters"]["IdDossier"];
+                /** @description L'identifiant de l'article à manipuler. */
+                IdArticle: components["parameters"]["IdArticle"];
+            };
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post?: never;
+        /** @description Supprime un article pour un dossier. */
+        delete: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description L'identifiant du dossier à manipuler. */
+                    IdDossier: components["parameters"]["IdDossier"];
+                    /** @description L'identifiant de l'article à manipuler. */
+                    IdArticle: components["parameters"]["IdArticle"];
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description No Content */
+                204: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content?: never;
+                };
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                404: components["responses"]["NotFound"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/v1/calliope/utilisateur/dossiers/{IdDossier}/familles-articles": {
         parameters: {
             query?: never;
@@ -9468,6 +9618,60 @@ export interface paths {
         put?: never;
         post?: never;
         delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/v1/calliope/utilisateur/dossiers/{IdDossier}/familles-articles/{IdFamilleArticle}/articles/{IdArticle}": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                /** @description L'identifiant du dossier à manipuler. */
+                IdDossier: components["parameters"]["IdDossier"];
+                /** @description L'identifiant de la famille d'articles à manipuler. */
+                IdFamilleArticle: components["parameters"]["IdFamilleArticle"];
+                /** @description L'identifiant de l'article à manipuler. */
+                IdArticle: components["parameters"]["IdArticle"];
+            };
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post?: never;
+        /** @description Supprime un article pour une famille d'articles. */
+        delete: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description L'identifiant du dossier à manipuler. */
+                    IdDossier: components["parameters"]["IdDossier"];
+                    /** @description L'identifiant de la famille d'articles à manipuler. */
+                    IdFamilleArticle: components["parameters"]["IdFamilleArticle"];
+                    /** @description L'identifiant de l'article à manipuler. */
+                    IdArticle: components["parameters"]["IdArticle"];
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description No Content */
+                204: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content?: never;
+                };
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                404: components["responses"]["NotFound"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
         options?: never;
         head?: never;
         patch?: never;
