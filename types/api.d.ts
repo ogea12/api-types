@@ -43,7 +43,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        /** @description Génère un jeton d'accès valide pendant un jour. */
+        /** @description Génère un jeton d'accès valide pendant un jour.
+         *
+         *     Dans le cas des utilisateurs disposant de la double authentification, un jeton de double authentification valide pendant une minute est fourni, afin de l'utiliser par la suite pour générer un jeton d'accès.
+         *
+         *     | **CODE HTTP** | **DESCRIPTION** |
+         *     |--|--|
+         *     | `201` - **Created** | Authentification sans double authentification. |
+         *     | `202` - **Accepted** | Authentification avec double authentification. | */
         post: {
             parameters: {
                 query?: never;
@@ -54,6 +61,7 @@ export interface paths {
             requestBody: components["requestBodies"]["Auth"];
             responses: {
                 201: components["responses"]["Token"];
+                202: components["responses"]["Token"];
                 400: components["responses"]["BadRequest"];
                 404: components["responses"]["NotFound"];
                 406: components["responses"]["NotAcceptable"];
@@ -106,6 +114,39 @@ export interface paths {
             responses: {
                 201: components["responses"]["Token"];
                 400: components["responses"]["BadRequest"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/v1/auth/token-totp": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /** @description Génère un jeton d'accès valide pendant un jour (via MFA). */
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody: components["requestBodies"]["DoubleAuth"];
+            responses: {
+                201: components["responses"]["Token"];
+                400: components["responses"]["BadRequest"];
+                401: components["responses"]["Unauthorized"];
                 406: components["responses"]["NotAcceptable"];
                 500: components["responses"]["InternalServerError"];
                 503: components["responses"]["ServiceUnavailable"];
@@ -467,6 +508,103 @@ export interface paths {
                 cookie?: never;
             };
             requestBody: components["requestBodies"]["Utilisateur"];
+            responses: {
+                /** @description No Content */
+                204: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content?: never;
+                };
+                400: components["responses"]["BadRequest"];
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
+        trace?: never;
+    };
+    "/v1/base/utilisateur/totp": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /** @description Récupère la double authentification (MFA) pour l'utilisateur connecté. */
+        get: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description Un ensemble de paramètres */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": {
+                            /**
+                             * Format: byte
+                             * @description Le code à scanner encodé en **base64**.
+                             */
+                            QrCode?: string;
+                            /** @description La phrase secrète. */
+                            Secret?: string;
+                        };
+                    };
+                };
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
+        /** @description Configure la double authentification (MFA) pour l'utilisateur connecté. */
+        put: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody: components["requestBodies"]["DoubleAuth"];
+            responses: {
+                /** @description No Content */
+                204: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content?: never;
+                };
+                400: components["responses"]["BadRequest"];
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        /** @description Désactive la double authentification (MFA) pour l'utilisateur connecté. */
+        patch: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody: components["requestBodies"]["DoubleAuth"];
             responses: {
                 /** @description No Content */
                 204: {
@@ -10577,9 +10715,14 @@ export interface components {
         /** AuthGererMesAffairesWrapper */
         AuthGererMesAffairesWrapper: {
             /** @description Le jeton d'accès délivré par GererMesAffaires. */
-            AccessToken?: string;
+            AccessToken: string;
             /** @description Le jeton d'actualisation délivré par GererMesAffaires. */
-            RefreshToken?: string;
+            RefreshToken: string;
+        };
+        /** DoubleAuthWrapper */
+        DoubleAuthWrapper: {
+            /** @description Le code de mot de passe à usage unique. */
+            Code: string;
         };
         /** BaseDeDonneesWrapper */
         BaseDeDonneesWrapper: {
@@ -10688,11 +10831,11 @@ export interface components {
         };
         /** TokenWrapper */
         TokenWrapper: {
-            /** @description Le jeton d'accès valide pendant un jour. */
+            /** @description Le jeton au format **JWT (JSON Web Token)**. */
             Token: string;
             /**
              * Format: date-time
-             * @description La date et l'heure d'expiration du jeton d'accès à la norme ISO 8601.
+             * @description La date et l'heure d'expiration du jeton à la norme ISO 8601.
              */
             Expiration: string;
         };
@@ -13014,6 +13157,8 @@ export interface components {
             Identifiant: string | null;
             /** @description Le mot de passe de connexion hashé avec l'algorithme SHA-256. */
             MotDePasse: string;
+            /** @description La double authentification (MFA). */
+            DoubleAuth: string | null;
             Permission: components["schemas"]["Permission"];
             MethodeConnexion: components["schemas"]["MethodeConnexion"];
             /**
@@ -13884,6 +14029,14 @@ export interface components {
                 "application/json": components["schemas"]["AuthGererMesAffairesWrapper"];
             };
         };
+        DoubleAuth: {
+            content: {
+                /** @example {
+                 *       "Code": "782315"
+                 *     } */
+                "application/json": components["schemas"]["DoubleAuthWrapper"];
+            };
+        };
         Ids: {
             content: {
                 "application/json": components["schemas"]["IdsWrapper"];
@@ -14013,6 +14166,7 @@ export type SchemaMethodeConnexion = components['schemas']['MethodeConnexion'];
 export type SchemaPermission = components['schemas']['Permission'];
 export type SchemaAuthWrapper = components['schemas']['AuthWrapper'];
 export type SchemaAuthGererMesAffairesWrapper = components['schemas']['AuthGererMesAffairesWrapper'];
+export type SchemaDoubleAuthWrapper = components['schemas']['DoubleAuthWrapper'];
 export type SchemaBaseDeDonneesWrapper = components['schemas']['BaseDeDonneesWrapper'];
 export type SchemaConfigWrapper = components['schemas']['ConfigWrapper'];
 export type SchemaErreurWrapper = components['schemas']['ErreurWrapper'];
@@ -14189,6 +14343,7 @@ export type ParameterIdUnite = components['parameters']['IdUnite'];
 export type ParameterIdLog = components['parameters']['IdLog'];
 export type RequestBodyAuth = components['requestBodies']['Auth'];
 export type RequestBodyAuthGererMesAffaires = components['requestBodies']['AuthGererMesAffaires'];
+export type RequestBodyDoubleAuth = components['requestBodies']['DoubleAuth'];
 export type RequestBodyIds = components['requestBodies']['Ids'];
 export type RequestBodyAcompte = components['requestBodies']['Acompte'];
 export type RequestBodyArticleProduit = components['requestBodies']['ArticleProduit'];
