@@ -3420,7 +3420,30 @@ export interface paths {
             };
             cookie?: never;
         };
-        get?: never;
+        /** @description Récupère un client pour un dossier. */
+        get: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description L'identifiant du dossier à manipuler. */
+                    IdDossier: components["parameters"]["IdDossier"];
+                    /** @description L'identifiant du client à manipuler. */
+                    IdClient: components["parameters"]["IdClient"];
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                200: components["responses"]["Client"];
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                404: components["responses"]["NotFound"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
         put?: never;
         post?: never;
         /** @description Supprime un client pour un dossier. */
@@ -8807,7 +8830,30 @@ export interface paths {
             };
             cookie?: never;
         };
-        get?: never;
+        /** @description Récupère un fournisseur pour un dossier. */
+        get: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description L'identifiant du dossier à manipuler. */
+                    IdDossier: components["parameters"]["IdDossier"];
+                    /** @description L'identifiant du fournisseur à manipuler. */
+                    IdFournisseur: components["parameters"]["IdFournisseur"];
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                200: components["responses"]["Fournisseur"];
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                404: components["responses"]["NotFound"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
         put?: never;
         post?: never;
         /** @description Supprime un fournisseur pour un dossier. */
