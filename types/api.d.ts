@@ -1343,6 +1343,94 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/v1/calliope/utilisateur/dossiers/{IdDossier}/devis/{IdDevis}/duplique": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                /** @description L'identifiant du dossier à manipuler. */
+                IdDossier: components["parameters"]["IdDossier"];
+                /** @description L'identifiant du devis à manipuler. */
+                IdDevis: components["parameters"]["IdDevis"];
+            };
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /** @description Duplique un devis pour un dossier. */
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description L'identifiant du dossier à manipuler. */
+                    IdDossier: components["parameters"]["IdDossier"];
+                    /** @description L'identifiant du devis à manipuler. */
+                    IdDevis: components["parameters"]["IdDevis"];
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                201: components["responses"]["Id"];
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                404: components["responses"]["NotFound"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/v1/calliope/utilisateur/dossiers/{IdDossier}/devis/{IdDevis}/duplique-factures-commerciales": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                /** @description L'identifiant du dossier à manipuler. */
+                IdDossier: components["parameters"]["IdDossier"];
+                /** @description L'identifiant du devis à manipuler. */
+                IdDevis: components["parameters"]["IdDevis"];
+            };
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /** @description Duplique un devis en facture commerciale pour un dossier. */
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description L'identifiant du dossier à manipuler. */
+                    IdDossier: components["parameters"]["IdDossier"];
+                    /** @description L'identifiant du devis à manipuler. */
+                    IdDevis: components["parameters"]["IdDevis"];
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                201: components["responses"]["Id"];
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                404: components["responses"]["NotFound"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/v1/calliope/utilisateur/dossiers/{IdDossier}/devis/{IdDevis}/lignes": {
         parameters: {
             query?: never;
@@ -1923,6 +2011,182 @@ export interface paths {
         };
         put?: never;
         post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/v1/calliope/utilisateur/dossiers/{IdDossier}/factures-commerciales/{IdFactureCommerciale}/duplique": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                /** @description L'identifiant du dossier à manipuler. */
+                IdDossier: components["parameters"]["IdDossier"];
+                /** @description L'identifiant de la facture commerciale à manipuler. */
+                IdFactureCommerciale: components["parameters"]["IdFactureCommerciale"];
+            };
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /** @description Duplique une facture commerciale pour un dossier. */
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description L'identifiant du dossier à manipuler. */
+                    IdDossier: components["parameters"]["IdDossier"];
+                    /** @description L'identifiant de la facture commerciale à manipuler. */
+                    IdFactureCommerciale: components["parameters"]["IdFactureCommerciale"];
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                201: components["responses"]["Id"];
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                404: components["responses"]["NotFound"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/v1/calliope/utilisateur/dossiers/{IdDossier}/factures-commerciales/{IdFactureCommerciale}/duplique-acomptes": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                /** @description L'identifiant du dossier à manipuler. */
+                IdDossier: components["parameters"]["IdDossier"];
+                /** @description L'identifiant de la facture commerciale à manipuler. */
+                IdFactureCommerciale: components["parameters"]["IdFactureCommerciale"];
+            };
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /** @description Duplique une facture commerciale en acompte pour un dossier. */
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description L'identifiant du dossier à manipuler. */
+                    IdDossier: components["parameters"]["IdDossier"];
+                    /** @description L'identifiant de la facture commerciale à manipuler. */
+                    IdFactureCommerciale: components["parameters"]["IdFactureCommerciale"];
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                201: components["responses"]["Id"];
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                404: components["responses"]["NotFound"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/v1/calliope/utilisateur/dossiers/{IdDossier}/factures-commerciales/{IdFactureCommerciale}/duplique-avoirs": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                /** @description L'identifiant du dossier à manipuler. */
+                IdDossier: components["parameters"]["IdDossier"];
+                /** @description L'identifiant de la facture commerciale à manipuler. */
+                IdFactureCommerciale: components["parameters"]["IdFactureCommerciale"];
+            };
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /** @description Duplique une facture commerciale en avoir pour un dossier. */
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description L'identifiant du dossier à manipuler. */
+                    IdDossier: components["parameters"]["IdDossier"];
+                    /** @description L'identifiant de la facture commerciale à manipuler. */
+                    IdFactureCommerciale: components["parameters"]["IdFactureCommerciale"];
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                201: components["responses"]["Id"];
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                404: components["responses"]["NotFound"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/v1/calliope/utilisateur/dossiers/{IdDossier}/factures-commerciales/{IdFactureCommerciale}/duplique-devis": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                /** @description L'identifiant du dossier à manipuler. */
+                IdDossier: components["parameters"]["IdDossier"];
+                /** @description L'identifiant de la facture commerciale à manipuler. */
+                IdFactureCommerciale: components["parameters"]["IdFactureCommerciale"];
+            };
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /** @description Duplique une facture commerciale en devis pour un dossier. */
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description L'identifiant du dossier à manipuler. */
+                    IdDossier: components["parameters"]["IdDossier"];
+                    /** @description L'identifiant de la facture commerciale à manipuler. */
+                    IdFactureCommerciale: components["parameters"]["IdFactureCommerciale"];
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                201: components["responses"]["Id"];
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                404: components["responses"]["NotFound"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
         delete?: never;
         options?: never;
         head?: never;
@@ -2871,6 +3135,94 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/v1/calliope/utilisateur/dossiers/{IdDossier}/acomptes/{IdAcompte}/duplique": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                /** @description L'identifiant du dossier à manipuler. */
+                IdDossier: components["parameters"]["IdDossier"];
+                /** @description L'identifiant de l'acompte à manipuler. */
+                IdAcompte: components["parameters"]["IdAcompte"];
+            };
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /** @description Duplique un acompte pour un dossier. */
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description L'identifiant du dossier à manipuler. */
+                    IdDossier: components["parameters"]["IdDossier"];
+                    /** @description L'identifiant de l'acompte à manipuler. */
+                    IdAcompte: components["parameters"]["IdAcompte"];
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                201: components["responses"]["Id"];
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                404: components["responses"]["NotFound"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/v1/calliope/utilisateur/dossiers/{IdDossier}/acomptes/{IdAcompte}/duplique-factures-commerciales": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                /** @description L'identifiant du dossier à manipuler. */
+                IdDossier: components["parameters"]["IdDossier"];
+                /** @description L'identifiant de l'acompte à manipuler. */
+                IdAcompte: components["parameters"]["IdAcompte"];
+            };
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /** @description Duplique un acompte en facture commerciale pour un dossier. */
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description L'identifiant du dossier à manipuler. */
+                    IdDossier: components["parameters"]["IdDossier"];
+                    /** @description L'identifiant de l'acompte à manipuler. */
+                    IdAcompte: components["parameters"]["IdAcompte"];
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                201: components["responses"]["Id"];
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                404: components["responses"]["NotFound"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/v1/calliope/utilisateur/dossiers/{IdDossier}/acomptes/{IdAcompte}/bloque": {
         parameters: {
             query?: never;
@@ -3197,6 +3549,94 @@ export interface paths {
         };
         put?: never;
         post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/v1/calliope/utilisateur/dossiers/{IdDossier}/avoirs/{IdAvoir}/duplique": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                /** @description L'identifiant du dossier à manipuler. */
+                IdDossier: components["parameters"]["IdDossier"];
+                /** @description L'identifiant de l'avoir à manipuler. */
+                IdAvoir: components["parameters"]["IdAvoir"];
+            };
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /** @description Duplique un avoir pour un dossier. */
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description L'identifiant du dossier à manipuler. */
+                    IdDossier: components["parameters"]["IdDossier"];
+                    /** @description L'identifiant de l'avoir à manipuler. */
+                    IdAvoir: components["parameters"]["IdAvoir"];
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                201: components["responses"]["Id"];
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                404: components["responses"]["NotFound"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/v1/calliope/utilisateur/dossiers/{IdDossier}/avoirs/{IdAvoir}/duplique-factures-commerciales": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                /** @description L'identifiant du dossier à manipuler. */
+                IdDossier: components["parameters"]["IdDossier"];
+                /** @description L'identifiant de l'avoir à manipuler. */
+                IdAvoir: components["parameters"]["IdAvoir"];
+            };
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /** @description Duplique un avoir en facture commerciale pour un dossier. */
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description L'identifiant du dossier à manipuler. */
+                    IdDossier: components["parameters"]["IdDossier"];
+                    /** @description L'identifiant de l'avoir à manipuler. */
+                    IdAvoir: components["parameters"]["IdAvoir"];
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                201: components["responses"]["Id"];
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                404: components["responses"]["NotFound"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
         delete?: never;
         options?: never;
         head?: never;
