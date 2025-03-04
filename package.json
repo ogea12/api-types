@@ -29,13 +29,13 @@
     "@ogea12/eslint-config": "^1.1.1",
     "@ogea12/prettier-config": "^1.0.2",
     "@ogea12/tsconfig": "^1.0.2",
-    "@swc/core": "^1.11.1",
-    "@types/node": "^22.13.5",
+    "@swc/core": "^1.11.6",
+    "@types/node": "^22.13.9",
     "eslint": "^9.21.0",
     "openapi-typescript": "^7.6.1",
-    "prettier": "^3.5.2",
+    "prettier": "^3.5.3",
     "release-it": "^18.1.2",
-    "typescript": "^5.7.3"
+    "typescript": "^5.8.2"
   },
   "author": "OGEA 12",
   "license": "MIT",
