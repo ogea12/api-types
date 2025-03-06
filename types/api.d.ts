@@ -10326,6 +10326,94 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/v1/calliope/utilisateur/dossiers/{IdDossier}/articles-produits/{IdArticleProduit}/duplique": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                /** @description L'identifiant du dossier à manipuler. */
+                IdDossier: components["parameters"]["IdDossier"];
+                /** @description L'identifiant de l'article produit à manipuler. */
+                IdArticleProduit: components["parameters"]["IdArticleProduit"];
+            };
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /** @description Duplique un article produit pour un dossier. */
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description L'identifiant du dossier à manipuler. */
+                    IdDossier: components["parameters"]["IdDossier"];
+                    /** @description L'identifiant de l'article produit à manipuler. */
+                    IdArticleProduit: components["parameters"]["IdArticleProduit"];
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                201: components["responses"]["Id"];
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                404: components["responses"]["NotFound"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/v1/calliope/utilisateur/dossiers/{IdDossier}/articles-services/{IdArticleService}/duplique": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                /** @description L'identifiant du dossier à manipuler. */
+                IdDossier: components["parameters"]["IdDossier"];
+                /** @description L'identifiant de l'article service à manipuler. */
+                IdArticleService: components["parameters"]["IdArticleService"];
+            };
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /** @description Duplique un article service pour un dossier. */
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description L'identifiant du dossier à manipuler. */
+                    IdDossier: components["parameters"]["IdDossier"];
+                    /** @description L'identifiant de l'article service à manipuler. */
+                    IdArticleService: components["parameters"]["IdArticleService"];
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                201: components["responses"]["Id"];
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                404: components["responses"]["NotFound"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/v1/calliope/utilisateur/dossiers/{IdDossier}/familles-articles": {
         parameters: {
             query?: never;
