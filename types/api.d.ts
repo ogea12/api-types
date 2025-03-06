@@ -4154,7 +4154,10 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        /** @description Duplique un client moral pour un dossier. */
+        /**
+         * @deprecated
+         * @description Duplique un client moral pour un dossier.
+         */
         post: {
             parameters: {
                 query?: never;
@@ -4610,7 +4613,10 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        /** @description Duplique un client physique pour un dossier. */
+        /**
+         * @deprecated
+         * @description Duplique un client physique pour un dossier.
+         */
         post: {
             parameters: {
                 query?: never;
@@ -9696,7 +9702,10 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        /** @description Duplique un fournisseur moral pour un dossier. */
+        /**
+         * @deprecated
+         * @description Duplique un fournisseur moral pour un dossier.
+         */
         post: {
             parameters: {
                 query?: never;
@@ -10152,7 +10161,10 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        /** @description Duplique un fournisseur physique pour un dossier. */
+        /**
+         * @deprecated
+         * @description Duplique un fournisseur physique pour un dossier.
+         */
         post: {
             parameters: {
                 query?: never;
@@ -10340,7 +10352,10 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        /** @description Duplique un article produit pour un dossier. */
+        /**
+         * @deprecated
+         * @description Duplique un article produit pour un dossier.
+         */
         post: {
             parameters: {
                 query?: never;
@@ -10384,7 +10399,10 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        /** @description Duplique un article service pour un dossier. */
+        /**
+         * @deprecated
+         * @description Duplique un article service pour un dossier.
+         */
         post: {
             parameters: {
                 query?: never;
