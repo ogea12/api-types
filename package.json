@@ -29,7 +29,7 @@
     "@ogea12/eslint-config": "^1.1.1",
     "@ogea12/prettier-config": "^1.0.2",
     "@ogea12/tsconfig": "^1.0.2",
-    "@swc/core": "^1.11.6",
+    "@swc/core": "^1.11.7",
     "@types/node": "^22.13.9",
     "eslint": "^9.21.0",
     "openapi-typescript": "^7.6.1",
