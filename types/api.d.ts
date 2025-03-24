@@ -11641,6 +11641,11 @@ export interface components {
          */
         TypeFacture: "FactureCommerciale" | "Acompte" | "Avoir";
         /**
+         * @description L'héritage.
+         * @enum {string}
+         */
+        Heritage: "Utilisateur" | "Groupe";
+        /**
          * @description La méthode de connexion.
          * @enum {string}
          */
@@ -13448,6 +13453,7 @@ export interface components {
         };
         /** DossierResponse */
         DossierResponse: components["schemas"]["IdWrapper"] & components["schemas"]["HorodatageWrapper"] & {
+            Heritage: components["schemas"]["Heritage"];
             /** @description La raison sociale. */
             RaisonSociale: string;
             StatutJuridique: components["schemas"]["StatutJuridiqueResponse"];
@@ -15110,6 +15116,7 @@ export type SchemaTypeArticle = components['schemas']['TypeArticle'];
 export type SchemaTypeClient = components['schemas']['TypeClient'];
 export type SchemaTypeFournisseur = components['schemas']['TypeFournisseur'];
 export type SchemaTypeFacture = components['schemas']['TypeFacture'];
+export type SchemaHeritage = components['schemas']['Heritage'];
 export type SchemaMethodeConnexion = components['schemas']['MethodeConnexion'];
 export type SchemaPermission = components['schemas']['Permission'];
 export type SchemaAuthWrapper = components['schemas']['AuthWrapper'];
