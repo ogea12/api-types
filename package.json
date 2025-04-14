@@ -26,16 +26,16 @@
     "url": "git+https://github.com/ogea12/api-types.git"
   },
   "devDependencies": {
-    "@ogea12/eslint-config": "^1.2.0",
+    "@ogea12/eslint-config": "^2.0.1",
     "@ogea12/prettier-config": "^1.0.3",
     "@ogea12/tsconfig": "^1.0.3",
-    "@swc/core": "^1.11.13",
-    "@types/node": "^22.13.12",
-    "eslint": "^9.23.0",
+    "@swc/core": "^1.11.21",
+    "@types/node": "^22.14.1",
+    "eslint": "^9.24.0",
     "openapi-typescript": "^7.6.1",
     "prettier": "^3.5.3",
     "release-it": "^18.1.2",
-    "typescript": "^5.8.2"
+    "typescript": "^5.8.3"
   },
   "author": "OGEA 12",
   "license": "MIT",
