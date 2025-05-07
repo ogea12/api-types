@@ -20,7 +20,7 @@
     "prepare": "husky",
     "generate": "npx openapi-typescript openapi.json -o types/api.d.ts --root-types",
     "release": "npx release-it",
-    "taze": "npx taze -I"
+    "taze": "npx taze"
   },
   "homepage": "https://github.com/ogea12/api-types#readme",
   "repository": {
@@ -40,7 +40,7 @@
     "openapi-typescript": "^7.7.1",
     "prettier": "^3.5.3",
     "release-it": "^19.0.2",
-    "taze": "^19.0.4",
+    "taze": "^19.1.0",
     "typescript": "^5.8.3"
   },
   "author": "OGEA 12",
