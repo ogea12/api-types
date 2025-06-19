@@ -1,7 +1,7 @@
 {
   "name": "@ogea12/api-types",
   "description": "Description des types utilisés dans l'API de l'OGEA 12",
-  "version": "1.2.11",
+  "version": "1.2.12",
   "engines": {
     "node": ">=20.17.0"
   },
