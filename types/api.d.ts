@@ -706,6 +706,100 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/v1/base/utilisateur/dossiers/{IdDossier}/collaborateurs": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                /** @description L'identifiant du dossier à manipuler. */
+                IdDossier: components["parameters"]["IdDossier"];
+            };
+            cookie?: never;
+        };
+        /** @description Récupère tous les collaborateurs pour un dossier. */
+        get: {
+            parameters: {
+                query?: {
+                    /** @description La clé du dernier résultat à parcourir. */
+                    "Pagination.Key"?: components["parameters"]["Pagination.Key"];
+                    /** @description Le numéro de la page à obtenir. */
+                    "Pagination.Page"?: components["parameters"]["Pagination.Page"];
+                    /** @description Le nombre maximum de résultats à obtenir. */
+                    "Pagination.Limit"?: components["parameters"]["Pagination.Limit"];
+                    /** @description Le tri des résultats est effectué dans l'ordre décroissant. */
+                    "Pagination.Reverse"?: components["parameters"]["Pagination.Reverse"];
+                };
+                header?: never;
+                path: {
+                    /** @description L'identifiant du dossier à manipuler. */
+                    IdDossier: components["parameters"]["IdDossier"];
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                200: components["responses"]["CollaborateurArray"];
+                400: components["responses"]["BadRequest"];
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                404: components["responses"]["NotFound"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/v1/base/utilisateur/dossiers/{IdDossier}/collaborateurs/{IdCollaborateur}": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                /** @description L'identifiant du dossier à manipuler. */
+                IdDossier: components["parameters"]["IdDossier"];
+                /** @description L'identifiant du collaborateur à manipuler. */
+                IdCollaborateur: components["parameters"]["IdCollaborateur"];
+            };
+            cookie?: never;
+        };
+        /** @description Récupère un collaborateur pour un dossier. */
+        get: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description L'identifiant du dossier à manipuler. */
+                    IdDossier: components["parameters"]["IdDossier"];
+                    /** @description L'identifiant du collaborateur à manipuler. */
+                    IdCollaborateur: components["parameters"]["IdCollaborateur"];
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                200: components["responses"]["Collaborateur"];
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                404: components["responses"]["NotFound"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/v1/base/utilisateur/dossiers/{IdDossier}/contacts": {
         parameters: {
             query?: never;
@@ -13261,6 +13355,38 @@ export interface components {
             /** @description La note. */
             Note: string | null;
         };
+        /** CollaborateurResponse */
+        CollaborateurResponse: components["schemas"]["IdWrapper"] & components["schemas"]["HorodatageWrapper"] & {
+            /** @description Le nom. */
+            Nom: string;
+            /** @description Le prénom. */
+            Prenom: string;
+            Civilite: components["schemas"]["CiviliteResponse"];
+            Adresse: components["schemas"]["AdresseResponse"];
+            /** @description Le mail. */
+            Mail: string | null;
+            /** @description Le numéro de téléphone. */
+            Telephone: string | null;
+            /** @description L'identifiant GererMesAffaires. */
+            IdGererMesAffaires: string | null;
+            /**
+             * Format: email
+             * @description L'identifiant de connexion.
+             */
+            Identifiant: string | null;
+            /** @description Le mot de passe de connexion hashé avec l'algorithme SHA-256. */
+            MotDePasse: string;
+            /** @description La double authentification (MFA). */
+            DoubleAuth: string | null;
+            Permission: components["schemas"]["Permission"];
+            MethodeConnexion: components["schemas"]["MethodeConnexion"];
+            /**
+             * Format: date-time
+             * @description La date et l'heure de dernière connexion à la norme ISO 8601.
+             */
+            DerniereConnexion: string | null;
+            Acces: components["schemas"]["Acces"];
+        };
         /** ContactResponse */
         ContactResponse: components["schemas"]["IdWrapper"] & components["schemas"]["HorodatageWrapper"] & {
             /** @description Le nom. */
@@ -14296,6 +14422,15 @@ export interface components {
                 "application/json": components["schemas"]["ClientPhysiqueResponse"];
             };
         };
+        /** @description Un collaborateur */
+        Collaborateur: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": components["schemas"]["CollaborateurResponse"];
+            };
+        };
         /** @description Un contact */
         Contact: {
             headers: {
@@ -14611,6 +14746,18 @@ export interface components {
                 };
             };
         };
+        /** @description Un tableau de collaborateurs */
+        CollaborateurArray: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    Info: components["schemas"]["CollaborateurResponse"][];
+                    Extra: components["schemas"]["ExtraWrapper"];
+                };
+            };
+        };
         /** @description Un tableau de contacts */
         ContactArray: {
             headers: {
@@ -14869,6 +15016,11 @@ export interface components {
                 [name: string]: unknown;
             };
             content: {
+                /** @example {
+                 *       "CodeStatut": 406,
+                 *       "Indication": "Not Acceptable",
+                 *       "Detail": "La ressource demandée n'est pas disponible dans un format décrit dans l'en-tête 'Accept'."
+                 *     } */
                 "application/json": components["schemas"]["ErreurWrapper"];
             };
         };
@@ -14878,6 +15030,11 @@ export interface components {
                 [name: string]: unknown;
             };
             content: {
+                /** @example {
+                 *       "CodeStatut": 500,
+                 *       "Indication": "Internal Server Error",
+                 *       "Detail": "Le traitement serveur ne s'est pas correctement exécuté."
+                 *     } */
                 "application/json": components["schemas"]["ErreurWrapper"];
             };
         };
@@ -14887,6 +15044,11 @@ export interface components {
                 [name: string]: unknown;
             };
             content: {
+                /** @example {
+                 *       "CodeStatut": 501,
+                 *       "Indication": "Not Implemented",
+                 *       "Detail": "La fonctionnalité n'est pas encore implémentée."
+                 *     } */
                 "application/json": components["schemas"]["ErreurWrapper"];
             };
         };
@@ -14896,6 +15058,11 @@ export interface components {
                 [name: string]: unknown;
             };
             content: {
+                /** @example {
+                 *       "CodeStatut": 503,
+                 *       "Indication": "Service Unavailable",
+                 *       "Detail": "Le service est temporairement indisponible ou en maintenance."
+                 *     } */
                 "application/json": components["schemas"]["ErreurWrapper"];
             };
         };
@@ -14927,6 +15094,8 @@ export interface components {
         IdClientMoral: number;
         /** @description L'identifiant du client physique à manipuler. */
         IdClientPhysique: number;
+        /** @description L'identifiant du collaborateur à manipuler. */
+        IdCollaborateur: number;
         /** @description L'identifiant du contact à manipuler. */
         IdContact: number;
         /** @description L'identifiant du fournisseur à manipuler. */
@@ -15170,6 +15339,7 @@ export type SchemaCiviliteResponse = components['schemas']['CiviliteResponse'];
 export type SchemaClientResponse = components['schemas']['ClientResponse'];
 export type SchemaClientMoralResponse = components['schemas']['ClientMoralResponse'];
 export type SchemaClientPhysiqueResponse = components['schemas']['ClientPhysiqueResponse'];
+export type SchemaCollaborateurResponse = components['schemas']['CollaborateurResponse'];
 export type SchemaContactResponse = components['schemas']['ContactResponse'];
 export type SchemaDevisResponse = components['schemas']['DevisResponse'];
 export type SchemaDevisAvecClientResponse = components['schemas']['DevisAvecClientResponse'];
@@ -15208,6 +15378,7 @@ export type ResponseCivilite = components['responses']['Civilite'];
 export type ResponseClient = components['responses']['Client'];
 export type ResponseClientMoral = components['responses']['ClientMoral'];
 export type ResponseClientPhysique = components['responses']['ClientPhysique'];
+export type ResponseCollaborateur = components['responses']['Collaborateur'];
 export type ResponseContact = components['responses']['Contact'];
 export type ResponseDevis = components['responses']['Devis'];
 export type ResponseDevisAvecClient = components['responses']['DevisAvecClient'];
@@ -15239,6 +15410,7 @@ export type ResponseCiviliteArray = components['responses']['CiviliteArray'];
 export type ResponseClientArray = components['responses']['ClientArray'];
 export type ResponseClientMoralArray = components['responses']['ClientMoralArray'];
 export type ResponseClientPhysiqueArray = components['responses']['ClientPhysiqueArray'];
+export type ResponseCollaborateurArray = components['responses']['CollaborateurArray'];
 export type ResponseContactArray = components['responses']['ContactArray'];
 export type ResponseDevisArray = components['responses']['DevisArray'];
 export type ResponseDevisAvecClientArray = components['responses']['DevisAvecClientArray'];
@@ -15278,6 +15450,7 @@ export type ParameterIdGroupe = components['parameters']['IdGroupe'];
 export type ParameterIdClient = components['parameters']['IdClient'];
 export type ParameterIdClientMoral = components['parameters']['IdClientMoral'];
 export type ParameterIdClientPhysique = components['parameters']['IdClientPhysique'];
+export type ParameterIdCollaborateur = components['parameters']['IdCollaborateur'];
 export type ParameterIdContact = components['parameters']['IdContact'];
 export type ParameterIdFournisseur = components['parameters']['IdFournisseur'];
 export type ParameterIdFournisseurMoral = components['parameters']['IdFournisseurMoral'];
