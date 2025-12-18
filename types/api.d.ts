@@ -2342,6 +2342,51 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/v1/calliope/utilisateur/dossiers/{IdDossier}/factures-commerciales/{IdFactureCommerciale}/annule": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                /** @description L'identifiant du dossier à manipuler. */
+                IdDossier: components["parameters"]["IdDossier"];
+                /** @description L'identifiant de la facture commerciale à manipuler. */
+                IdFactureCommerciale: components["parameters"]["IdFactureCommerciale"];
+            };
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /** @description Annule une facture commerciale pour un dossier. */
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description L'identifiant du dossier à manipuler. */
+                    IdDossier: components["parameters"]["IdDossier"];
+                    /** @description L'identifiant de la facture commerciale à manipuler. */
+                    IdFactureCommerciale: components["parameters"]["IdFactureCommerciale"];
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                201: components["responses"]["Id"];
+                400: components["responses"]["BadRequest"];
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                404: components["responses"]["NotFound"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/v1/calliope/utilisateur/dossiers/{IdDossier}/factures-commerciales/{IdFactureCommerciale}/lignes": {
         parameters: {
             query?: never;
@@ -3372,6 +3417,51 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/v1/calliope/utilisateur/dossiers/{IdDossier}/acomptes/{IdAcompte}/annule": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                /** @description L'identifiant du dossier à manipuler. */
+                IdDossier: components["parameters"]["IdDossier"];
+                /** @description L'identifiant de l'acompte à manipuler. */
+                IdAcompte: components["parameters"]["IdAcompte"];
+            };
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /** @description Annule un acompte pour un dossier. */
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description L'identifiant du dossier à manipuler. */
+                    IdDossier: components["parameters"]["IdDossier"];
+                    /** @description L'identifiant de l'acompte à manipuler. */
+                    IdAcompte: components["parameters"]["IdAcompte"];
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                201: components["responses"]["Id"];
+                400: components["responses"]["BadRequest"];
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                404: components["responses"]["NotFound"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/v1/calliope/utilisateur/dossiers/{IdDossier}/acomptes/{IdAcompte}/lignes": {
         parameters: {
             query?: never;
@@ -3786,6 +3876,51 @@ export interface paths {
             };
         };
         post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/v1/calliope/utilisateur/dossiers/{IdDossier}/avoirs/{IdAvoir}/annule": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                /** @description L'identifiant du dossier à manipuler. */
+                IdDossier: components["parameters"]["IdDossier"];
+                /** @description L'identifiant de l'avoir à manipuler. */
+                IdAvoir: components["parameters"]["IdAvoir"];
+            };
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /** @description Annule un avoir pour un dossier. */
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description L'identifiant du dossier à manipuler. */
+                    IdDossier: components["parameters"]["IdDossier"];
+                    /** @description L'identifiant de l'avoir à manipuler. */
+                    IdAvoir: components["parameters"]["IdAvoir"];
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                201: components["responses"]["Id"];
+                400: components["responses"]["BadRequest"];
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                404: components["responses"]["NotFound"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
         delete?: never;
         options?: never;
         head?: never;
@@ -6386,6 +6521,55 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/v1/calliope/utilisateur/dossiers/{IdDossier}/clients/{IdClient}/factures-commerciales/{IdFactureCommerciale}/annule": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                /** @description L'identifiant du dossier à manipuler. */
+                IdDossier: components["parameters"]["IdDossier"];
+                /** @description L'identifiant du client à manipuler. */
+                IdClient: components["parameters"]["IdClient"];
+                /** @description L'identifiant de la facture commerciale à manipuler. */
+                IdFactureCommerciale: components["parameters"]["IdFactureCommerciale"];
+            };
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /** @description Annule une facture commerciale pour un client. */
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description L'identifiant du dossier à manipuler. */
+                    IdDossier: components["parameters"]["IdDossier"];
+                    /** @description L'identifiant du client à manipuler. */
+                    IdClient: components["parameters"]["IdClient"];
+                    /** @description L'identifiant de la facture commerciale à manipuler. */
+                    IdFactureCommerciale: components["parameters"]["IdFactureCommerciale"];
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                201: components["responses"]["Id"];
+                400: components["responses"]["BadRequest"];
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                404: components["responses"]["NotFound"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/v1/calliope/utilisateur/dossiers/{IdDossier}/clients/{IdClient}/factures-commerciales/{IdFactureCommerciale}/duplique": {
         parameters: {
             query?: never;
@@ -8404,6 +8588,55 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/v1/calliope/utilisateur/dossiers/{IdDossier}/clients/{IdClient}/acomptes/{IdAcompte}/annule": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                /** @description L'identifiant du dossier à manipuler. */
+                IdDossier: components["parameters"]["IdDossier"];
+                /** @description L'identifiant du client à manipuler. */
+                IdClient: components["parameters"]["IdClient"];
+                /** @description L'identifiant de l'acompte à manipuler. */
+                IdAcompte: components["parameters"]["IdAcompte"];
+            };
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /** @description Annule un acompte pour un client. */
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description L'identifiant du dossier à manipuler. */
+                    IdDossier: components["parameters"]["IdDossier"];
+                    /** @description L'identifiant du client à manipuler. */
+                    IdClient: components["parameters"]["IdClient"];
+                    /** @description L'identifiant de l'acompte à manipuler. */
+                    IdAcompte: components["parameters"]["IdAcompte"];
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                201: components["responses"]["Id"];
+                400: components["responses"]["BadRequest"];
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                404: components["responses"]["NotFound"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/v1/calliope/utilisateur/dossiers/{IdDossier}/clients/{IdClient}/acomptes/{IdAcompte}/duplique": {
         parameters: {
             query?: never;
@@ -9088,6 +9321,55 @@ export interface paths {
             };
         };
         post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/v1/calliope/utilisateur/dossiers/{IdDossier}/clients/{IdClient}/avoirs/{IdAvoir}/annule": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                /** @description L'identifiant du dossier à manipuler. */
+                IdDossier: components["parameters"]["IdDossier"];
+                /** @description L'identifiant du client à manipuler. */
+                IdClient: components["parameters"]["IdClient"];
+                /** @description L'identifiant de l'avoir à manipuler. */
+                IdAvoir: components["parameters"]["IdAvoir"];
+            };
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /** @description Annule un avoir pour un client. */
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description L'identifiant du dossier à manipuler. */
+                    IdDossier: components["parameters"]["IdDossier"];
+                    /** @description L'identifiant du client à manipuler. */
+                    IdClient: components["parameters"]["IdClient"];
+                    /** @description L'identifiant de l'avoir à manipuler. */
+                    IdAvoir: components["parameters"]["IdAvoir"];
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                201: components["responses"]["Id"];
+                400: components["responses"]["BadRequest"];
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                404: components["responses"]["NotFound"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
         delete?: never;
         options?: never;
         head?: never;
