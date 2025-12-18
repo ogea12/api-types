@@ -43,14 +43,16 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        /** @description Génère un jeton d'accès valide pendant un jour.
+        /**
+         * @description Génère un jeton d'accès valide pendant un jour.
          *
          *     Dans le cas des utilisateurs disposant de la double authentification, un jeton de double authentification valide pendant une minute est fourni, afin de l'utiliser par la suite pour générer un jeton d'accès.
          *
          *     | **CODE HTTP** | **DESCRIPTION** |
          *     |--|--|
          *     | `201` - **Created** | Authentification sans double authentification. |
-         *     | `202` - **Accepted** | Authentification avec double authentification. | */
+         *     | `202` - **Accepted** | Authentification avec double authentification. |
+         */
         post: {
             parameters: {
                 query?: never;
@@ -82,9 +84,11 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** @description Récupère un jeton d'accès [GererMesAffaires](https://www.gerermesaffaires.com) valide.
+        /**
+         * @description Récupère un jeton d'accès [GererMesAffaires](https://www.gerermesaffaires.com) valide.
          *
-         *     Cette action utilise le cookie `gerermesaffaires-session`, il faut donc préalablement s'authentifier avec `POST /v1/auth/token-gerermesaffaires`. Vous pouvez consulter la [documentation de GererMesAffaires](https://swagger.gerermesaffaires.com) pour découvrir les opérations possibles. */
+         *     Cette action utilise le cookie `gerermesaffaires-session`, il faut donc préalablement s'authentifier avec `POST /v1/auth/token-gerermesaffaires`. Vous pouvez consulter la [documentation de GererMesAffaires](https://swagger.gerermesaffaires.com) pour découvrir les opérations possibles.
+         */
         get: {
             parameters: {
                 query?: never;
@@ -5135,9 +5139,11 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        /** @description Transforme un devis en facture commerciale pour un client.
+        /**
+         * @description Transforme un devis en facture commerciale pour un client.
          *
-         *     💡 Les potentiels acomptes associés au devis sont dupliqués. */
+         *     💡 Les potentiels acomptes associés au devis sont dupliqués.
+         */
         post: {
             parameters: {
                 query?: never;
@@ -15016,11 +15022,13 @@ export interface components {
                 [name: string]: unknown;
             };
             content: {
-                /** @example {
+                /**
+                 * @example {
                  *       "CodeStatut": 406,
                  *       "Indication": "Not Acceptable",
                  *       "Detail": "La ressource demandée n'est pas disponible dans un format décrit dans l'en-tête 'Accept'."
-                 *     } */
+                 *     }
+                 */
                 "application/json": components["schemas"]["ErreurWrapper"];
             };
         };
@@ -15030,11 +15038,13 @@ export interface components {
                 [name: string]: unknown;
             };
             content: {
-                /** @example {
+                /**
+                 * @example {
                  *       "CodeStatut": 500,
                  *       "Indication": "Internal Server Error",
                  *       "Detail": "Le traitement serveur ne s'est pas correctement exécuté."
-                 *     } */
+                 *     }
+                 */
                 "application/json": components["schemas"]["ErreurWrapper"];
             };
         };
@@ -15044,11 +15054,13 @@ export interface components {
                 [name: string]: unknown;
             };
             content: {
-                /** @example {
+                /**
+                 * @example {
                  *       "CodeStatut": 501,
                  *       "Indication": "Not Implemented",
                  *       "Detail": "La fonctionnalité n'est pas encore implémentée."
-                 *     } */
+                 *     }
+                 */
                 "application/json": components["schemas"]["ErreurWrapper"];
             };
         };
@@ -15058,11 +15070,13 @@ export interface components {
                 [name: string]: unknown;
             };
             content: {
-                /** @example {
+                /**
+                 * @example {
                  *       "CodeStatut": 503,
                  *       "Indication": "Service Unavailable",
                  *       "Detail": "Le service est temporairement indisponible ou en maintenance."
-                 *     } */
+                 *     }
+                 */
                 "application/json": components["schemas"]["ErreurWrapper"];
             };
         };
@@ -15136,27 +15150,33 @@ export interface components {
     requestBodies: {
         Auth: {
             content: {
-                /** @example {
+                /**
+                 * @example {
                  *       "Identifiant": "julien.benac@ogea12.com",
                  *       "MotDePasse": "e3aae9a8650c9da7a42b9b0c93439dd2b9d0d6557904f36b2d86230d1b4d1303"
-                 *     } */
+                 *     }
+                 */
                 "application/json": components["schemas"]["AuthWrapper"];
             };
         };
         AuthGererMesAffaires: {
             content: {
-                /** @example {
+                /**
+                 * @example {
                  *       "AccessToken": "8c837a69158a6bb061de6b4f7bc8ea2c98873ba6",
                  *       "RefreshToken": "ed26803ece98e52b9cfe4e8efbb2b50507309698"
-                 *     } */
+                 *     }
+                 */
                 "application/json": components["schemas"]["AuthGererMesAffairesWrapper"];
             };
         };
         DoubleAuth: {
             content: {
-                /** @example {
+                /**
+                 * @example {
                  *       "Code": "782315"
-                 *     } */
+                 *     }
+                 */
                 "application/json": components["schemas"]["DoubleAuthWrapper"];
             };
         };
