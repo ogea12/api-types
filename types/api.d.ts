@@ -179,8 +179,10 @@ export interface paths {
                     "Pagination.Page"?: components["parameters"]["Pagination.Page"];
                     /** @description Le nombre maximum de résultats à obtenir. */
                     "Pagination.Limit"?: components["parameters"]["Pagination.Limit"];
-                    /** @description Le tri des résultats est effectué dans l'ordre décroissant. */
-                    "Pagination.Reverse"?: components["parameters"]["Pagination.Reverse"];
+                    /** @description La rubrique utilisée pour trier les résultats. */
+                    "Sort.By"?: components["parameters"]["Sort.By"];
+                    /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
+                    "Sort.Order"?: components["parameters"]["Sort.Order"];
                 };
                 header?: never;
                 path?: never;
@@ -335,8 +337,10 @@ export interface paths {
                     "Pagination.Page"?: components["parameters"]["Pagination.Page"];
                     /** @description Le nombre maximum de résultats à obtenir. */
                     "Pagination.Limit"?: components["parameters"]["Pagination.Limit"];
-                    /** @description Le tri des résultats est effectué dans l'ordre décroissant. */
-                    "Pagination.Reverse"?: components["parameters"]["Pagination.Reverse"];
+                    /** @description La rubrique utilisée pour trier les résultats. */
+                    "Sort.By"?: components["parameters"]["Sort.By"];
+                    /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
+                    "Sort.Order"?: components["parameters"]["Sort.Order"];
                 };
                 header?: never;
                 path?: never;
@@ -644,8 +648,10 @@ export interface paths {
                     "Pagination.Page"?: components["parameters"]["Pagination.Page"];
                     /** @description Le nombre maximum de résultats à obtenir. */
                     "Pagination.Limit"?: components["parameters"]["Pagination.Limit"];
-                    /** @description Le tri des résultats est effectué dans l'ordre décroissant. */
-                    "Pagination.Reverse"?: components["parameters"]["Pagination.Reverse"];
+                    /** @description La rubrique utilisée pour trier les résultats. */
+                    "Sort.By"?: components["parameters"]["Sort.By"];
+                    /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
+                    "Sort.Order"?: components["parameters"]["Sort.Order"];
                 };
                 header?: never;
                 path?: never;
@@ -730,8 +736,10 @@ export interface paths {
                     "Pagination.Page"?: components["parameters"]["Pagination.Page"];
                     /** @description Le nombre maximum de résultats à obtenir. */
                     "Pagination.Limit"?: components["parameters"]["Pagination.Limit"];
-                    /** @description Le tri des résultats est effectué dans l'ordre décroissant. */
-                    "Pagination.Reverse"?: components["parameters"]["Pagination.Reverse"];
+                    /** @description La rubrique utilisée pour trier les résultats. */
+                    "Sort.By"?: components["parameters"]["Sort.By"];
+                    /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
+                    "Sort.Order"?: components["parameters"]["Sort.Order"];
                 };
                 header?: never;
                 path: {
@@ -824,8 +832,10 @@ export interface paths {
                     "Pagination.Page"?: components["parameters"]["Pagination.Page"];
                     /** @description Le nombre maximum de résultats à obtenir. */
                     "Pagination.Limit"?: components["parameters"]["Pagination.Limit"];
-                    /** @description Le tri des résultats est effectué dans l'ordre décroissant. */
-                    "Pagination.Reverse"?: components["parameters"]["Pagination.Reverse"];
+                    /** @description La rubrique utilisée pour trier les résultats. */
+                    "Sort.By"?: components["parameters"]["Sort.By"];
+                    /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
+                    "Sort.Order"?: components["parameters"]["Sort.Order"];
                 };
                 header?: never;
                 path: {
@@ -1040,8 +1050,10 @@ export interface paths {
                     "Pagination.Page"?: components["parameters"]["Pagination.Page"];
                     /** @description Le nombre maximum de résultats à obtenir. */
                     "Pagination.Limit"?: components["parameters"]["Pagination.Limit"];
-                    /** @description Le tri des résultats est effectué dans l'ordre décroissant. */
-                    "Pagination.Reverse"?: components["parameters"]["Pagination.Reverse"];
+                    /** @description La rubrique utilisée pour trier les résultats. */
+                    "Sort.By"?: components["parameters"]["Sort.By"];
+                    /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
+                    "Sort.Order"?: components["parameters"]["Sort.Order"];
                 };
                 header?: never;
                 path?: never;
@@ -1123,8 +1135,10 @@ export interface paths {
                     "Pagination.Page"?: components["parameters"]["Pagination.Page"];
                     /** @description Le nombre maximum de résultats à obtenir. */
                     "Pagination.Limit"?: components["parameters"]["Pagination.Limit"];
-                    /** @description Le tri des résultats est effectué dans l'ordre décroissant. */
-                    "Pagination.Reverse"?: components["parameters"]["Pagination.Reverse"];
+                    /** @description La rubrique utilisée pour trier les résultats. */
+                    "Sort.By"?: components["parameters"]["Sort.By"];
+                    /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
+                    "Sort.Order"?: components["parameters"]["Sort.Order"];
                 };
                 header?: never;
                 path?: never;
@@ -1282,8 +1296,10 @@ export interface paths {
                     "Pagination.Page"?: components["parameters"]["Pagination.Page"];
                     /** @description Le nombre maximum de résultats à obtenir. */
                     "Pagination.Limit"?: components["parameters"]["Pagination.Limit"];
-                    /** @description Le tri des résultats est effectué dans l'ordre décroissant. */
-                    "Pagination.Reverse"?: components["parameters"]["Pagination.Reverse"];
+                    /** @description La rubrique utilisée pour trier les résultats. */
+                    "Sort.By"?: components["parameters"]["Sort.By"];
+                    /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
+                    "Sort.Order"?: components["parameters"]["Sort.Order"];
                 };
                 header?: never;
                 path: {
@@ -1551,8 +1567,10 @@ export interface paths {
                     "Pagination.Page"?: components["parameters"]["Pagination.Page"];
                     /** @description Le nombre maximum de résultats à obtenir. */
                     "Pagination.Limit"?: components["parameters"]["Pagination.Limit"];
-                    /** @description Le tri des résultats est effectué dans l'ordre décroissant. */
-                    "Pagination.Reverse"?: components["parameters"]["Pagination.Reverse"];
+                    /** @description La rubrique utilisée pour trier les résultats. */
+                    "Sort.By"?: components["parameters"]["Sort.By"];
+                    /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
+                    "Sort.Order"?: components["parameters"]["Sort.Order"];
                 };
                 header?: never;
                 path: {
@@ -1653,8 +1671,10 @@ export interface paths {
                     "Pagination.Page"?: components["parameters"]["Pagination.Page"];
                     /** @description Le nombre maximum de résultats à obtenir. */
                     "Pagination.Limit"?: components["parameters"]["Pagination.Limit"];
-                    /** @description Le tri des résultats est effectué dans l'ordre décroissant. */
-                    "Pagination.Reverse"?: components["parameters"]["Pagination.Reverse"];
+                    /** @description La rubrique utilisée pour trier les résultats. */
+                    "Sort.By"?: components["parameters"]["Sort.By"];
+                    /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
+                    "Sort.Order"?: components["parameters"]["Sort.Order"];
                 };
                 header?: never;
                 path: {
@@ -1850,8 +1870,10 @@ export interface paths {
                     "Pagination.Page"?: components["parameters"]["Pagination.Page"];
                     /** @description Le nombre maximum de résultats à obtenir. */
                     "Pagination.Limit"?: components["parameters"]["Pagination.Limit"];
-                    /** @description Le tri des résultats est effectué dans l'ordre décroissant. */
-                    "Pagination.Reverse"?: components["parameters"]["Pagination.Reverse"];
+                    /** @description La rubrique utilisée pour trier les résultats. */
+                    "Sort.By"?: components["parameters"]["Sort.By"];
+                    /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
+                    "Sort.Order"?: components["parameters"]["Sort.Order"];
                 };
                 header?: never;
                 path: {
@@ -1936,6 +1958,110 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/v1/calliope/utilisateur/dossiers/{IdDossier}/devis/{IdDevis}/situations": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                /** @description L'identifiant du dossier à manipuler. */
+                IdDossier: components["parameters"]["IdDossier"];
+                /** @description L'identifiant du devis à manipuler. */
+                IdDevis: components["parameters"]["IdDevis"];
+            };
+            cookie?: never;
+        };
+        /** @description Récupère toutes les situations pour un devis (tenant dossier). */
+        get: {
+            parameters: {
+                query?: {
+                    /** @description La clé du dernier résultat à parcourir. */
+                    "Pagination.Key"?: components["parameters"]["Pagination.Key"];
+                    /** @description Le numéro de la page à obtenir. */
+                    "Pagination.Page"?: components["parameters"]["Pagination.Page"];
+                    /** @description Le nombre maximum de résultats à obtenir. */
+                    "Pagination.Limit"?: components["parameters"]["Pagination.Limit"];
+                    /** @description La rubrique utilisée pour trier les résultats. */
+                    "Sort.By"?: components["parameters"]["Sort.By"];
+                    /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
+                    "Sort.Order"?: components["parameters"]["Sort.Order"];
+                };
+                header?: never;
+                path: {
+                    /** @description L'identifiant du dossier à manipuler. */
+                    IdDossier: components["parameters"]["IdDossier"];
+                    /** @description L'identifiant du devis à manipuler. */
+                    IdDevis: components["parameters"]["IdDevis"];
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                200: components["responses"]["SituationAvecClientArray"];
+                400: components["responses"]["BadRequest"];
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                404: components["responses"]["NotFound"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/v1/calliope/utilisateur/dossiers/{IdDossier}/devis/{IdDevis}/situations/{IdSituation}": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                /** @description L'identifiant du dossier à manipuler. */
+                IdDossier: components["parameters"]["IdDossier"];
+                /** @description L'identifiant du devis à manipuler. */
+                IdDevis: components["parameters"]["IdDevis"];
+                /** @description L'identifiant de la situation à manipuler. */
+                IdSituation: components["parameters"]["IdSituation"];
+            };
+            cookie?: never;
+        };
+        /** @description Récupère une situation pour un devis (tenant dossier). */
+        get: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description L'identifiant du dossier à manipuler. */
+                    IdDossier: components["parameters"]["IdDossier"];
+                    /** @description L'identifiant du devis à manipuler. */
+                    IdDevis: components["parameters"]["IdDevis"];
+                    /** @description L'identifiant de la situation à manipuler. */
+                    IdSituation: components["parameters"]["IdSituation"];
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                200: components["responses"]["SituationAvecClient"];
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                404: components["responses"]["NotFound"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/v1/calliope/utilisateur/dossiers/{IdDossier}/factures-commerciales": {
         parameters: {
             query?: never;
@@ -1956,8 +2082,10 @@ export interface paths {
                     "Pagination.Page"?: components["parameters"]["Pagination.Page"];
                     /** @description Le nombre maximum de résultats à obtenir. */
                     "Pagination.Limit"?: components["parameters"]["Pagination.Limit"];
-                    /** @description Le tri des résultats est effectué dans l'ordre décroissant. */
-                    "Pagination.Reverse"?: components["parameters"]["Pagination.Reverse"];
+                    /** @description La rubrique utilisée pour trier les résultats. */
+                    "Sort.By"?: components["parameters"]["Sort.By"];
+                    /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
+                    "Sort.Order"?: components["parameters"]["Sort.Order"];
                 };
                 header?: never;
                 path: {
@@ -2409,8 +2537,10 @@ export interface paths {
                     "Pagination.Page"?: components["parameters"]["Pagination.Page"];
                     /** @description Le nombre maximum de résultats à obtenir. */
                     "Pagination.Limit"?: components["parameters"]["Pagination.Limit"];
-                    /** @description Le tri des résultats est effectué dans l'ordre décroissant. */
-                    "Pagination.Reverse"?: components["parameters"]["Pagination.Reverse"];
+                    /** @description La rubrique utilisée pour trier les résultats. */
+                    "Sort.By"?: components["parameters"]["Sort.By"];
+                    /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
+                    "Sort.Order"?: components["parameters"]["Sort.Order"];
                 };
                 header?: never;
                 path: {
@@ -2511,8 +2641,10 @@ export interface paths {
                     "Pagination.Page"?: components["parameters"]["Pagination.Page"];
                     /** @description Le nombre maximum de résultats à obtenir. */
                     "Pagination.Limit"?: components["parameters"]["Pagination.Limit"];
-                    /** @description Le tri des résultats est effectué dans l'ordre décroissant. */
-                    "Pagination.Reverse"?: components["parameters"]["Pagination.Reverse"];
+                    /** @description La rubrique utilisée pour trier les résultats. */
+                    "Sort.By"?: components["parameters"]["Sort.By"];
+                    /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
+                    "Sort.Order"?: components["parameters"]["Sort.Order"];
                 };
                 header?: never;
                 path: {
@@ -2708,8 +2840,10 @@ export interface paths {
                     "Pagination.Page"?: components["parameters"]["Pagination.Page"];
                     /** @description Le nombre maximum de résultats à obtenir. */
                     "Pagination.Limit"?: components["parameters"]["Pagination.Limit"];
-                    /** @description Le tri des résultats est effectué dans l'ordre décroissant. */
-                    "Pagination.Reverse"?: components["parameters"]["Pagination.Reverse"];
+                    /** @description La rubrique utilisée pour trier les résultats. */
+                    "Sort.By"?: components["parameters"]["Sort.By"];
+                    /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
+                    "Sort.Order"?: components["parameters"]["Sort.Order"];
                 };
                 header?: never;
                 path: {
@@ -2816,8 +2950,10 @@ export interface paths {
                     "Pagination.Page"?: components["parameters"]["Pagination.Page"];
                     /** @description Le nombre maximum de résultats à obtenir. */
                     "Pagination.Limit"?: components["parameters"]["Pagination.Limit"];
-                    /** @description Le tri des résultats est effectué dans l'ordre décroissant. */
-                    "Pagination.Reverse"?: components["parameters"]["Pagination.Reverse"];
+                    /** @description La rubrique utilisée pour trier les résultats. */
+                    "Sort.By"?: components["parameters"]["Sort.By"];
+                    /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
+                    "Sort.Order"?: components["parameters"]["Sort.Order"];
                 };
                 header?: never;
                 path: {
@@ -3013,8 +3149,10 @@ export interface paths {
                     "Pagination.Page"?: components["parameters"]["Pagination.Page"];
                     /** @description Le nombre maximum de résultats à obtenir. */
                     "Pagination.Limit"?: components["parameters"]["Pagination.Limit"];
-                    /** @description Le tri des résultats est effectué dans l'ordre décroissant. */
-                    "Pagination.Reverse"?: components["parameters"]["Pagination.Reverse"];
+                    /** @description La rubrique utilisée pour trier les résultats. */
+                    "Sort.By"?: components["parameters"]["Sort.By"];
+                    /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
+                    "Sort.Order"?: components["parameters"]["Sort.Order"];
                 };
                 header?: never;
                 path: {
@@ -3119,8 +3257,10 @@ export interface paths {
                     "Pagination.Page"?: components["parameters"]["Pagination.Page"];
                     /** @description Le nombre maximum de résultats à obtenir. */
                     "Pagination.Limit"?: components["parameters"]["Pagination.Limit"];
-                    /** @description Le tri des résultats est effectué dans l'ordre décroissant. */
-                    "Pagination.Reverse"?: components["parameters"]["Pagination.Reverse"];
+                    /** @description La rubrique utilisée pour trier les résultats. */
+                    "Sort.By"?: components["parameters"]["Sort.By"];
+                    /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
+                    "Sort.Order"?: components["parameters"]["Sort.Order"];
                 };
                 header?: never;
                 path: {
@@ -3484,8 +3624,10 @@ export interface paths {
                     "Pagination.Page"?: components["parameters"]["Pagination.Page"];
                     /** @description Le nombre maximum de résultats à obtenir. */
                     "Pagination.Limit"?: components["parameters"]["Pagination.Limit"];
-                    /** @description Le tri des résultats est effectué dans l'ordre décroissant. */
-                    "Pagination.Reverse"?: components["parameters"]["Pagination.Reverse"];
+                    /** @description La rubrique utilisée pour trier les résultats. */
+                    "Sort.By"?: components["parameters"]["Sort.By"];
+                    /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
+                    "Sort.Order"?: components["parameters"]["Sort.Order"];
                 };
                 header?: never;
                 path: {
@@ -3584,8 +3726,10 @@ export interface paths {
                     "Pagination.Page"?: components["parameters"]["Pagination.Page"];
                     /** @description Le nombre maximum de résultats à obtenir. */
                     "Pagination.Limit"?: components["parameters"]["Pagination.Limit"];
-                    /** @description Le tri des résultats est effectué dans l'ordre décroissant. */
-                    "Pagination.Reverse"?: components["parameters"]["Pagination.Reverse"];
+                    /** @description La rubrique utilisée pour trier les résultats. */
+                    "Sort.By"?: components["parameters"]["Sort.By"];
+                    /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
+                    "Sort.Order"?: components["parameters"]["Sort.Order"];
                 };
                 header?: never;
                 path: {
@@ -3949,8 +4093,10 @@ export interface paths {
                     "Pagination.Page"?: components["parameters"]["Pagination.Page"];
                     /** @description Le nombre maximum de résultats à obtenir. */
                     "Pagination.Limit"?: components["parameters"]["Pagination.Limit"];
-                    /** @description Le tri des résultats est effectué dans l'ordre décroissant. */
-                    "Pagination.Reverse"?: components["parameters"]["Pagination.Reverse"];
+                    /** @description La rubrique utilisée pour trier les résultats. */
+                    "Sort.By"?: components["parameters"]["Sort.By"];
+                    /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
+                    "Sort.Order"?: components["parameters"]["Sort.Order"];
                 };
                 header?: never;
                 path: {
@@ -4029,6 +4175,414 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/v1/calliope/utilisateur/dossiers/{IdDossier}/situations": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                /** @description L'identifiant du dossier à manipuler. */
+                IdDossier: components["parameters"]["IdDossier"];
+            };
+            cookie?: never;
+        };
+        /** @description Récupère toutes les situations pour un dossier. */
+        get: {
+            parameters: {
+                query?: {
+                    /** @description La clé du dernier résultat à parcourir. */
+                    "Pagination.Key"?: components["parameters"]["Pagination.Key"];
+                    /** @description Le numéro de la page à obtenir. */
+                    "Pagination.Page"?: components["parameters"]["Pagination.Page"];
+                    /** @description Le nombre maximum de résultats à obtenir. */
+                    "Pagination.Limit"?: components["parameters"]["Pagination.Limit"];
+                    /** @description La rubrique utilisée pour trier les résultats. */
+                    "Sort.By"?: components["parameters"]["Sort.By"];
+                    /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
+                    "Sort.Order"?: components["parameters"]["Sort.Order"];
+                };
+                header?: never;
+                path: {
+                    /** @description L'identifiant du dossier à manipuler. */
+                    IdDossier: components["parameters"]["IdDossier"];
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                200: components["responses"]["SituationAvecClientEtDevisArray"];
+                400: components["responses"]["BadRequest"];
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                404: components["responses"]["NotFound"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/v1/calliope/utilisateur/dossiers/{IdDossier}/situations/{IdSituation}": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                /** @description L'identifiant du dossier à manipuler. */
+                IdDossier: components["parameters"]["IdDossier"];
+                /** @description L'identifiant de la situation à manipuler. */
+                IdSituation: components["parameters"]["IdSituation"];
+            };
+            cookie?: never;
+        };
+        /** @description Récupère une situation pour un dossier. */
+        get: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description L'identifiant du dossier à manipuler. */
+                    IdDossier: components["parameters"]["IdDossier"];
+                    /** @description L'identifiant de la situation à manipuler. */
+                    IdSituation: components["parameters"]["IdSituation"];
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                200: components["responses"]["SituationAvecClientEtDevis"];
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                404: components["responses"]["NotFound"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/v1/calliope/utilisateur/dossiers/{IdDossier}/situations/{IdSituation}/factures-commerciales": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                /** @description L'identifiant du dossier à manipuler. */
+                IdDossier: components["parameters"]["IdDossier"];
+                /** @description L'identifiant de la situation à manipuler. */
+                IdSituation: components["parameters"]["IdSituation"];
+            };
+            cookie?: never;
+        };
+        /** @description Récupère toutes les factures commerciales pour une situation (tenant dossier). */
+        get: {
+            parameters: {
+                query?: {
+                    /** @description La clé du dernier résultat à parcourir. */
+                    "Pagination.Key"?: components["parameters"]["Pagination.Key"];
+                    /** @description Le numéro de la page à obtenir. */
+                    "Pagination.Page"?: components["parameters"]["Pagination.Page"];
+                    /** @description Le nombre maximum de résultats à obtenir. */
+                    "Pagination.Limit"?: components["parameters"]["Pagination.Limit"];
+                    /** @description La rubrique utilisée pour trier les résultats. */
+                    "Sort.By"?: components["parameters"]["Sort.By"];
+                    /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
+                    "Sort.Order"?: components["parameters"]["Sort.Order"];
+                };
+                header?: never;
+                path: {
+                    /** @description L'identifiant du dossier à manipuler. */
+                    IdDossier: components["parameters"]["IdDossier"];
+                    /** @description L'identifiant de la situation à manipuler. */
+                    IdSituation: components["parameters"]["IdSituation"];
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                200: components["responses"]["FactureCommercialeArray"];
+                400: components["responses"]["BadRequest"];
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                404: components["responses"]["NotFound"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/v1/calliope/utilisateur/dossiers/{IdDossier}/situations/{IdSituation}/factures-commerciales/{IdFactureCommerciale}": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                /** @description L'identifiant du dossier à manipuler. */
+                IdDossier: components["parameters"]["IdDossier"];
+                /** @description L'identifiant de la situation à manipuler. */
+                IdSituation: components["parameters"]["IdSituation"];
+                /** @description L'identifiant de la facture commerciale à manipuler. */
+                IdFactureCommerciale: components["parameters"]["IdFactureCommerciale"];
+            };
+            cookie?: never;
+        };
+        /** @description Récupère une facture commerciale pour une situation (tenant dossier). */
+        get: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description L'identifiant du dossier à manipuler. */
+                    IdDossier: components["parameters"]["IdDossier"];
+                    /** @description L'identifiant de la situation à manipuler. */
+                    IdSituation: components["parameters"]["IdSituation"];
+                    /** @description L'identifiant de la facture commerciale à manipuler. */
+                    IdFactureCommerciale: components["parameters"]["IdFactureCommerciale"];
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                200: components["responses"]["FactureCommerciale"];
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                404: components["responses"]["NotFound"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/v1/calliope/utilisateur/dossiers/{IdDossier}/situations/{IdSituation}/avoirs": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                /** @description L'identifiant du dossier à manipuler. */
+                IdDossier: components["parameters"]["IdDossier"];
+                /** @description L'identifiant de la situation à manipuler. */
+                IdSituation: components["parameters"]["IdSituation"];
+            };
+            cookie?: never;
+        };
+        /** @description Récupère tous les avoirs pour une situation (tenant dossier). */
+        get: {
+            parameters: {
+                query?: {
+                    /** @description La clé du dernier résultat à parcourir. */
+                    "Pagination.Key"?: components["parameters"]["Pagination.Key"];
+                    /** @description Le numéro de la page à obtenir. */
+                    "Pagination.Page"?: components["parameters"]["Pagination.Page"];
+                    /** @description Le nombre maximum de résultats à obtenir. */
+                    "Pagination.Limit"?: components["parameters"]["Pagination.Limit"];
+                    /** @description La rubrique utilisée pour trier les résultats. */
+                    "Sort.By"?: components["parameters"]["Sort.By"];
+                    /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
+                    "Sort.Order"?: components["parameters"]["Sort.Order"];
+                };
+                header?: never;
+                path: {
+                    /** @description L'identifiant du dossier à manipuler. */
+                    IdDossier: components["parameters"]["IdDossier"];
+                    /** @description L'identifiant de la situation à manipuler. */
+                    IdSituation: components["parameters"]["IdSituation"];
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                200: components["responses"]["AvoirArray"];
+                400: components["responses"]["BadRequest"];
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                404: components["responses"]["NotFound"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/v1/calliope/utilisateur/dossiers/{IdDossier}/situations/{IdSituation}/avoirs/{IdAvoir}": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                /** @description L'identifiant du dossier à manipuler. */
+                IdDossier: components["parameters"]["IdDossier"];
+                /** @description L'identifiant de la situation à manipuler. */
+                IdSituation: components["parameters"]["IdSituation"];
+                /** @description L'identifiant de l'avoir à manipuler. */
+                IdAvoir: components["parameters"]["IdAvoir"];
+            };
+            cookie?: never;
+        };
+        /** @description Récupère un avoir pour une situation (tenant dossier). */
+        get: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description L'identifiant du dossier à manipuler. */
+                    IdDossier: components["parameters"]["IdDossier"];
+                    /** @description L'identifiant de la situation à manipuler. */
+                    IdSituation: components["parameters"]["IdSituation"];
+                    /** @description L'identifiant de l'avoir à manipuler. */
+                    IdAvoir: components["parameters"]["IdAvoir"];
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                200: components["responses"]["Avoir"];
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                404: components["responses"]["NotFound"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/v1/calliope/utilisateur/dossiers/{IdDossier}/situations/{IdSituation}/acomptes": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                /** @description L'identifiant du dossier à manipuler. */
+                IdDossier: components["parameters"]["IdDossier"];
+                /** @description L'identifiant de la situation à manipuler. */
+                IdSituation: components["parameters"]["IdSituation"];
+            };
+            cookie?: never;
+        };
+        /** @description Récupère tous les acomptes pour une situation (tenant dossier). */
+        get: {
+            parameters: {
+                query?: {
+                    /** @description La clé du dernier résultat à parcourir. */
+                    "Pagination.Key"?: components["parameters"]["Pagination.Key"];
+                    /** @description Le numéro de la page à obtenir. */
+                    "Pagination.Page"?: components["parameters"]["Pagination.Page"];
+                    /** @description Le nombre maximum de résultats à obtenir. */
+                    "Pagination.Limit"?: components["parameters"]["Pagination.Limit"];
+                    /** @description La rubrique utilisée pour trier les résultats. */
+                    "Sort.By"?: components["parameters"]["Sort.By"];
+                    /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
+                    "Sort.Order"?: components["parameters"]["Sort.Order"];
+                };
+                header?: never;
+                path: {
+                    /** @description L'identifiant du dossier à manipuler. */
+                    IdDossier: components["parameters"]["IdDossier"];
+                    /** @description L'identifiant de la situation à manipuler. */
+                    IdSituation: components["parameters"]["IdSituation"];
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                200: components["responses"]["AcompteArray"];
+                400: components["responses"]["BadRequest"];
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                404: components["responses"]["NotFound"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/v1/calliope/utilisateur/dossiers/{IdDossier}/situations/{IdSituation}/acomptes/{IdAcompte}": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                /** @description L'identifiant du dossier à manipuler. */
+                IdDossier: components["parameters"]["IdDossier"];
+                /** @description L'identifiant de la situation à manipuler. */
+                IdSituation: components["parameters"]["IdSituation"];
+                /** @description L'identifiant de l'acompte à manipuler. */
+                IdAcompte: components["parameters"]["IdAcompte"];
+            };
+            cookie?: never;
+        };
+        /** @description Récupère un acompte pour une situation (tenant dossier). */
+        get: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description L'identifiant du dossier à manipuler. */
+                    IdDossier: components["parameters"]["IdDossier"];
+                    /** @description L'identifiant de la situation à manipuler. */
+                    IdSituation: components["parameters"]["IdSituation"];
+                    /** @description L'identifiant de l'acompte à manipuler. */
+                    IdAcompte: components["parameters"]["IdAcompte"];
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                200: components["responses"]["Acompte"];
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                404: components["responses"]["NotFound"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/v1/calliope/utilisateur/dossiers/{IdDossier}/clients": {
         parameters: {
             query?: never;
@@ -4049,10 +4603,10 @@ export interface paths {
                     "Pagination.Page"?: components["parameters"]["Pagination.Page"];
                     /** @description Le nombre maximum de résultats à obtenir. */
                     "Pagination.Limit"?: components["parameters"]["Pagination.Limit"];
-                    /** @description Le tri des résultats est effectué dans l'ordre décroissant. */
-                    "Pagination.Reverse"?: components["parameters"]["Pagination.Reverse"];
-                    /** @description L'expression à rechercher. */
-                    Query?: components["parameters"]["Query"];
+                    /** @description La rubrique utilisée pour trier les résultats. */
+                    "Sort.By"?: components["parameters"]["Sort.By"];
+                    /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
+                    "Sort.Order"?: components["parameters"]["Sort.Order"];
                 };
                 header?: never;
                 path: {
@@ -4218,8 +4772,10 @@ export interface paths {
                     "Pagination.Page"?: components["parameters"]["Pagination.Page"];
                     /** @description Le nombre maximum de résultats à obtenir. */
                     "Pagination.Limit"?: components["parameters"]["Pagination.Limit"];
-                    /** @description Le tri des résultats est effectué dans l'ordre décroissant. */
-                    "Pagination.Reverse"?: components["parameters"]["Pagination.Reverse"];
+                    /** @description La rubrique utilisée pour trier les résultats. */
+                    "Sort.By"?: components["parameters"]["Sort.By"];
+                    /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
+                    "Sort.Order"?: components["parameters"]["Sort.Order"];
                 };
                 header?: never;
                 path: {
@@ -4442,8 +4998,10 @@ export interface paths {
                     "Pagination.Page"?: components["parameters"]["Pagination.Page"];
                     /** @description Le nombre maximum de résultats à obtenir. */
                     "Pagination.Limit"?: components["parameters"]["Pagination.Limit"];
-                    /** @description Le tri des résultats est effectué dans l'ordre décroissant. */
-                    "Pagination.Reverse"?: components["parameters"]["Pagination.Reverse"];
+                    /** @description La rubrique utilisée pour trier les résultats. */
+                    "Sort.By"?: components["parameters"]["Sort.By"];
+                    /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
+                    "Sort.Order"?: components["parameters"]["Sort.Order"];
                 };
                 header?: never;
                 path: {
@@ -4677,8 +5235,10 @@ export interface paths {
                     "Pagination.Page"?: components["parameters"]["Pagination.Page"];
                     /** @description Le nombre maximum de résultats à obtenir. */
                     "Pagination.Limit"?: components["parameters"]["Pagination.Limit"];
-                    /** @description Le tri des résultats est effectué dans l'ordre décroissant. */
-                    "Pagination.Reverse"?: components["parameters"]["Pagination.Reverse"];
+                    /** @description La rubrique utilisée pour trier les résultats. */
+                    "Sort.By"?: components["parameters"]["Sort.By"];
+                    /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
+                    "Sort.Order"?: components["parameters"]["Sort.Order"];
                 };
                 header?: never;
                 path: {
@@ -4901,8 +5461,10 @@ export interface paths {
                     "Pagination.Page"?: components["parameters"]["Pagination.Page"];
                     /** @description Le nombre maximum de résultats à obtenir. */
                     "Pagination.Limit"?: components["parameters"]["Pagination.Limit"];
-                    /** @description Le tri des résultats est effectué dans l'ordre décroissant. */
-                    "Pagination.Reverse"?: components["parameters"]["Pagination.Reverse"];
+                    /** @description La rubrique utilisée pour trier les résultats. */
+                    "Sort.By"?: components["parameters"]["Sort.By"];
+                    /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
+                    "Sort.Order"?: components["parameters"]["Sort.Order"];
                 };
                 header?: never;
                 path: {
@@ -5335,8 +5897,10 @@ export interface paths {
                     "Pagination.Page"?: components["parameters"]["Pagination.Page"];
                     /** @description Le nombre maximum de résultats à obtenir. */
                     "Pagination.Limit"?: components["parameters"]["Pagination.Limit"];
-                    /** @description Le tri des résultats est effectué dans l'ordre décroissant. */
-                    "Pagination.Reverse"?: components["parameters"]["Pagination.Reverse"];
+                    /** @description La rubrique utilisée pour trier les résultats. */
+                    "Sort.By"?: components["parameters"]["Sort.By"];
+                    /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
+                    "Sort.Order"?: components["parameters"]["Sort.Order"];
                 };
                 header?: never;
                 path: {
@@ -5591,8 +6155,10 @@ export interface paths {
                     "Pagination.Page"?: components["parameters"]["Pagination.Page"];
                     /** @description Le nombre maximum de résultats à obtenir. */
                     "Pagination.Limit"?: components["parameters"]["Pagination.Limit"];
-                    /** @description Le tri des résultats est effectué dans l'ordre décroissant. */
-                    "Pagination.Reverse"?: components["parameters"]["Pagination.Reverse"];
+                    /** @description La rubrique utilisée pour trier les résultats. */
+                    "Sort.By"?: components["parameters"]["Sort.By"];
+                    /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
+                    "Sort.Order"?: components["parameters"]["Sort.Order"];
                 };
                 header?: never;
                 path: {
@@ -5898,8 +6464,10 @@ export interface paths {
                     "Pagination.Page"?: components["parameters"]["Pagination.Page"];
                     /** @description Le nombre maximum de résultats à obtenir. */
                     "Pagination.Limit"?: components["parameters"]["Pagination.Limit"];
-                    /** @description Le tri des résultats est effectué dans l'ordre décroissant. */
-                    "Pagination.Reverse"?: components["parameters"]["Pagination.Reverse"];
+                    /** @description La rubrique utilisée pour trier les résultats. */
+                    "Sort.By"?: components["parameters"]["Sort.By"];
+                    /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
+                    "Sort.Order"?: components["parameters"]["Sort.Order"];
                 };
                 header?: never;
                 path: {
@@ -6183,6 +6751,212 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/v1/calliope/utilisateur/dossiers/{IdDossier}/clients/{IdClient}/devis/{IdDevis}/situations": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                /** @description L'identifiant du dossier à manipuler. */
+                IdDossier: components["parameters"]["IdDossier"];
+                /** @description L'identifiant du client à manipuler. */
+                IdClient: components["parameters"]["IdClient"];
+                /** @description L'identifiant du devis à manipuler. */
+                IdDevis: components["parameters"]["IdDevis"];
+            };
+            cookie?: never;
+        };
+        /** @description Récupère toutes les situations pour un devis (tenant client). */
+        get: {
+            parameters: {
+                query?: {
+                    /** @description La clé du dernier résultat à parcourir. */
+                    "Pagination.Key"?: components["parameters"]["Pagination.Key"];
+                    /** @description Le numéro de la page à obtenir. */
+                    "Pagination.Page"?: components["parameters"]["Pagination.Page"];
+                    /** @description Le nombre maximum de résultats à obtenir. */
+                    "Pagination.Limit"?: components["parameters"]["Pagination.Limit"];
+                    /** @description La rubrique utilisée pour trier les résultats. */
+                    "Sort.By"?: components["parameters"]["Sort.By"];
+                    /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
+                    "Sort.Order"?: components["parameters"]["Sort.Order"];
+                };
+                header?: never;
+                path: {
+                    /** @description L'identifiant du dossier à manipuler. */
+                    IdDossier: components["parameters"]["IdDossier"];
+                    /** @description L'identifiant du client à manipuler. */
+                    IdClient: components["parameters"]["IdClient"];
+                    /** @description L'identifiant du devis à manipuler. */
+                    IdDevis: components["parameters"]["IdDevis"];
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                200: components["responses"]["SituationArray"];
+                400: components["responses"]["BadRequest"];
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                404: components["responses"]["NotFound"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
+        put?: never;
+        /** @description Ajoute une situation pour un devis (tenant client). */
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description L'identifiant du dossier à manipuler. */
+                    IdDossier: components["parameters"]["IdDossier"];
+                    /** @description L'identifiant du client à manipuler. */
+                    IdClient: components["parameters"]["IdClient"];
+                    /** @description L'identifiant du devis à manipuler. */
+                    IdDevis: components["parameters"]["IdDevis"];
+                };
+                cookie?: never;
+            };
+            requestBody: components["requestBodies"]["Situation"];
+            responses: {
+                201: components["responses"]["Id"];
+                400: components["responses"]["BadRequest"];
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                404: components["responses"]["NotFound"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/v1/calliope/utilisateur/dossiers/{IdDossier}/clients/{IdClient}/devis/{IdDevis}/situations/{IdSituation}": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                /** @description L'identifiant du dossier à manipuler. */
+                IdDossier: components["parameters"]["IdDossier"];
+                /** @description L'identifiant du client à manipuler. */
+                IdClient: components["parameters"]["IdClient"];
+                /** @description L'identifiant du devis à manipuler. */
+                IdDevis: components["parameters"]["IdDevis"];
+                /** @description L'identifiant de la situation à manipuler. */
+                IdSituation: components["parameters"]["IdSituation"];
+            };
+            cookie?: never;
+        };
+        /** @description Récupère une situation pour un devis (tenant client). */
+        get: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description L'identifiant du dossier à manipuler. */
+                    IdDossier: components["parameters"]["IdDossier"];
+                    /** @description L'identifiant du client à manipuler. */
+                    IdClient: components["parameters"]["IdClient"];
+                    /** @description L'identifiant du devis à manipuler. */
+                    IdDevis: components["parameters"]["IdDevis"];
+                    /** @description L'identifiant de la situation à manipuler. */
+                    IdSituation: components["parameters"]["IdSituation"];
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                200: components["responses"]["Situation"];
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                404: components["responses"]["NotFound"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
+        put?: never;
+        post?: never;
+        /** @description Supprime une situation pour un devis (tenant client). */
+        delete: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description L'identifiant du dossier à manipuler. */
+                    IdDossier: components["parameters"]["IdDossier"];
+                    /** @description L'identifiant du client à manipuler. */
+                    IdClient: components["parameters"]["IdClient"];
+                    /** @description L'identifiant du devis à manipuler. */
+                    IdDevis: components["parameters"]["IdDevis"];
+                    /** @description L'identifiant de la situation à manipuler. */
+                    IdSituation: components["parameters"]["IdSituation"];
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description No Content */
+                204: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content?: never;
+                };
+                400: components["responses"]["BadRequest"];
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                404: components["responses"]["NotFound"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
+        options?: never;
+        head?: never;
+        /** @description Modifie une situation pour un devis (tenant client). */
+        patch: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description L'identifiant du dossier à manipuler. */
+                    IdDossier: components["parameters"]["IdDossier"];
+                    /** @description L'identifiant du client à manipuler. */
+                    IdClient: components["parameters"]["IdClient"];
+                    /** @description L'identifiant du devis à manipuler. */
+                    IdDevis: components["parameters"]["IdDevis"];
+                    /** @description L'identifiant de la situation à manipuler. */
+                    IdSituation: components["parameters"]["IdSituation"];
+                };
+                cookie?: never;
+            };
+            requestBody: components["requestBodies"]["Situation"];
+            responses: {
+                /** @description No Content */
+                204: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content?: never;
+                };
+                400: components["responses"]["BadRequest"];
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                404: components["responses"]["NotFound"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
+        trace?: never;
+    };
     "/v1/calliope/utilisateur/dossiers/{IdDossier}/clients/{IdClient}/factures-commerciales": {
         parameters: {
             query?: never;
@@ -6205,8 +6979,10 @@ export interface paths {
                     "Pagination.Page"?: components["parameters"]["Pagination.Page"];
                     /** @description Le nombre maximum de résultats à obtenir. */
                     "Pagination.Limit"?: components["parameters"]["Pagination.Limit"];
-                    /** @description Le tri des résultats est effectué dans l'ordre décroissant. */
-                    "Pagination.Reverse"?: components["parameters"]["Pagination.Reverse"];
+                    /** @description La rubrique utilisée pour trier les résultats. */
+                    "Sort.By"?: components["parameters"]["Sort.By"];
+                    /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
+                    "Sort.Order"?: components["parameters"]["Sort.Order"];
                 };
                 header?: never;
                 path: {
@@ -6786,8 +7562,10 @@ export interface paths {
                     "Pagination.Page"?: components["parameters"]["Pagination.Page"];
                     /** @description Le nombre maximum de résultats à obtenir. */
                     "Pagination.Limit"?: components["parameters"]["Pagination.Limit"];
-                    /** @description Le tri des résultats est effectué dans l'ordre décroissant. */
-                    "Pagination.Reverse"?: components["parameters"]["Pagination.Reverse"];
+                    /** @description La rubrique utilisée pour trier les résultats. */
+                    "Sort.By"?: components["parameters"]["Sort.By"];
+                    /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
+                    "Sort.Order"?: components["parameters"]["Sort.Order"];
                 };
                 header?: never;
                 path: {
@@ -7042,8 +7820,10 @@ export interface paths {
                     "Pagination.Page"?: components["parameters"]["Pagination.Page"];
                     /** @description Le nombre maximum de résultats à obtenir. */
                     "Pagination.Limit"?: components["parameters"]["Pagination.Limit"];
-                    /** @description Le tri des résultats est effectué dans l'ordre décroissant. */
-                    "Pagination.Reverse"?: components["parameters"]["Pagination.Reverse"];
+                    /** @description La rubrique utilisée pour trier les résultats. */
+                    "Sort.By"?: components["parameters"]["Sort.By"];
+                    /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
+                    "Sort.Order"?: components["parameters"]["Sort.Order"];
                 };
                 header?: never;
                 path: {
@@ -7349,8 +8129,10 @@ export interface paths {
                     "Pagination.Page"?: components["parameters"]["Pagination.Page"];
                     /** @description Le nombre maximum de résultats à obtenir. */
                     "Pagination.Limit"?: components["parameters"]["Pagination.Limit"];
-                    /** @description Le tri des résultats est effectué dans l'ordre décroissant. */
-                    "Pagination.Reverse"?: components["parameters"]["Pagination.Reverse"];
+                    /** @description La rubrique utilisée pour trier les résultats. */
+                    "Sort.By"?: components["parameters"]["Sort.By"];
+                    /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
+                    "Sort.Order"?: components["parameters"]["Sort.Order"];
                 };
                 header?: never;
                 path: {
@@ -7658,8 +8440,10 @@ export interface paths {
                     "Pagination.Page"?: components["parameters"]["Pagination.Page"];
                     /** @description Le nombre maximum de résultats à obtenir. */
                     "Pagination.Limit"?: components["parameters"]["Pagination.Limit"];
-                    /** @description Le tri des résultats est effectué dans l'ordre décroissant. */
-                    "Pagination.Reverse"?: components["parameters"]["Pagination.Reverse"];
+                    /** @description La rubrique utilisée pour trier les résultats. */
+                    "Sort.By"?: components["parameters"]["Sort.By"];
+                    /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
+                    "Sort.Order"?: components["parameters"]["Sort.Order"];
                 };
                 header?: never;
                 path: {
@@ -7965,8 +8749,10 @@ export interface paths {
                     "Pagination.Page"?: components["parameters"]["Pagination.Page"];
                     /** @description Le nombre maximum de résultats à obtenir. */
                     "Pagination.Limit"?: components["parameters"]["Pagination.Limit"];
-                    /** @description Le tri des résultats est effectué dans l'ordre décroissant. */
-                    "Pagination.Reverse"?: components["parameters"]["Pagination.Reverse"];
+                    /** @description La rubrique utilisée pour trier les résultats. */
+                    "Sort.By"?: components["parameters"]["Sort.By"];
+                    /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
+                    "Sort.Order"?: components["parameters"]["Sort.Order"];
                 };
                 header?: never;
                 path: {
@@ -8272,8 +9058,10 @@ export interface paths {
                     "Pagination.Page"?: components["parameters"]["Pagination.Page"];
                     /** @description Le nombre maximum de résultats à obtenir. */
                     "Pagination.Limit"?: components["parameters"]["Pagination.Limit"];
-                    /** @description Le tri des résultats est effectué dans l'ordre décroissant. */
-                    "Pagination.Reverse"?: components["parameters"]["Pagination.Reverse"];
+                    /** @description La rubrique utilisée pour trier les résultats. */
+                    "Sort.By"?: components["parameters"]["Sort.By"];
+                    /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
+                    "Sort.Order"?: components["parameters"]["Sort.Order"];
                 };
                 header?: never;
                 path: {
@@ -8757,8 +9545,10 @@ export interface paths {
                     "Pagination.Page"?: components["parameters"]["Pagination.Page"];
                     /** @description Le nombre maximum de résultats à obtenir. */
                     "Pagination.Limit"?: components["parameters"]["Pagination.Limit"];
-                    /** @description Le tri des résultats est effectué dans l'ordre décroissant. */
-                    "Pagination.Reverse"?: components["parameters"]["Pagination.Reverse"];
+                    /** @description La rubrique utilisée pour trier les résultats. */
+                    "Sort.By"?: components["parameters"]["Sort.By"];
+                    /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
+                    "Sort.Order"?: components["parameters"]["Sort.Order"];
                 };
                 header?: never;
                 path: {
@@ -9011,8 +9801,10 @@ export interface paths {
                     "Pagination.Page"?: components["parameters"]["Pagination.Page"];
                     /** @description Le nombre maximum de résultats à obtenir. */
                     "Pagination.Limit"?: components["parameters"]["Pagination.Limit"];
-                    /** @description Le tri des résultats est effectué dans l'ordre décroissant. */
-                    "Pagination.Reverse"?: components["parameters"]["Pagination.Reverse"];
+                    /** @description La rubrique utilisée pour trier les résultats. */
+                    "Sort.By"?: components["parameters"]["Sort.By"];
+                    /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
+                    "Sort.Order"?: components["parameters"]["Sort.Order"];
                 };
                 header?: never;
                 path: {
@@ -9496,8 +10288,10 @@ export interface paths {
                     "Pagination.Page"?: components["parameters"]["Pagination.Page"];
                     /** @description Le nombre maximum de résultats à obtenir. */
                     "Pagination.Limit"?: components["parameters"]["Pagination.Limit"];
-                    /** @description Le tri des résultats est effectué dans l'ordre décroissant. */
-                    "Pagination.Reverse"?: components["parameters"]["Pagination.Reverse"];
+                    /** @description La rubrique utilisée pour trier les résultats. */
+                    "Sort.By"?: components["parameters"]["Sort.By"];
+                    /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
+                    "Sort.Order"?: components["parameters"]["Sort.Order"];
                 };
                 header?: never;
                 path: {
@@ -9728,6 +10522,1004 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/v1/calliope/utilisateur/dossiers/{IdDossier}/clients/{IdClient}/situations": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                /** @description L'identifiant du dossier à manipuler. */
+                IdDossier: components["parameters"]["IdDossier"];
+                /** @description L'identifiant du client à manipuler. */
+                IdClient: components["parameters"]["IdClient"];
+            };
+            cookie?: never;
+        };
+        /** @description Récupère toutes les situations pour un client. */
+        get: {
+            parameters: {
+                query?: {
+                    /** @description La clé du dernier résultat à parcourir. */
+                    "Pagination.Key"?: components["parameters"]["Pagination.Key"];
+                    /** @description Le numéro de la page à obtenir. */
+                    "Pagination.Page"?: components["parameters"]["Pagination.Page"];
+                    /** @description Le nombre maximum de résultats à obtenir. */
+                    "Pagination.Limit"?: components["parameters"]["Pagination.Limit"];
+                    /** @description La rubrique utilisée pour trier les résultats. */
+                    "Sort.By"?: components["parameters"]["Sort.By"];
+                    /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
+                    "Sort.Order"?: components["parameters"]["Sort.Order"];
+                };
+                header?: never;
+                path: {
+                    /** @description L'identifiant du dossier à manipuler. */
+                    IdDossier: components["parameters"]["IdDossier"];
+                    /** @description L'identifiant du client à manipuler. */
+                    IdClient: components["parameters"]["IdClient"];
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                200: components["responses"]["SituationAvecDevisArray"];
+                400: components["responses"]["BadRequest"];
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                404: components["responses"]["NotFound"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/v1/calliope/utilisateur/dossiers/{IdDossier}/clients/{IdClient}/situations/{IdSituation}": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                /** @description L'identifiant du dossier à manipuler. */
+                IdDossier: components["parameters"]["IdDossier"];
+                /** @description L'identifiant du client à manipuler. */
+                IdClient: components["parameters"]["IdClient"];
+                /** @description L'identifiant de la situation à manipuler. */
+                IdSituation: components["parameters"]["IdSituation"];
+            };
+            cookie?: never;
+        };
+        /** @description Récupère une situation pour un client. */
+        get: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description L'identifiant du dossier à manipuler. */
+                    IdDossier: components["parameters"]["IdDossier"];
+                    /** @description L'identifiant du client à manipuler. */
+                    IdClient: components["parameters"]["IdClient"];
+                    /** @description L'identifiant de la situation à manipuler. */
+                    IdSituation: components["parameters"]["IdSituation"];
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                200: components["responses"]["SituationAvecDevis"];
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                404: components["responses"]["NotFound"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/v1/calliope/utilisateur/dossiers/{IdDossier}/clients/{IdClient}/situations/{IdSituation}/factures-commerciales": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                /** @description L'identifiant du dossier à manipuler. */
+                IdDossier: components["parameters"]["IdDossier"];
+                /** @description L'identifiant du client à manipuler. */
+                IdClient: components["parameters"]["IdClient"];
+                /** @description L'identifiant de la situation à manipuler. */
+                IdSituation: components["parameters"]["IdSituation"];
+            };
+            cookie?: never;
+        };
+        /** @description Récupère toutes les factures commerciales pour une situation (tenant client). */
+        get: {
+            parameters: {
+                query?: {
+                    /** @description La clé du dernier résultat à parcourir. */
+                    "Pagination.Key"?: components["parameters"]["Pagination.Key"];
+                    /** @description Le numéro de la page à obtenir. */
+                    "Pagination.Page"?: components["parameters"]["Pagination.Page"];
+                    /** @description Le nombre maximum de résultats à obtenir. */
+                    "Pagination.Limit"?: components["parameters"]["Pagination.Limit"];
+                    /** @description La rubrique utilisée pour trier les résultats. */
+                    "Sort.By"?: components["parameters"]["Sort.By"];
+                    /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
+                    "Sort.Order"?: components["parameters"]["Sort.Order"];
+                };
+                header?: never;
+                path: {
+                    /** @description L'identifiant du dossier à manipuler. */
+                    IdDossier: components["parameters"]["IdDossier"];
+                    /** @description L'identifiant du client à manipuler. */
+                    IdClient: components["parameters"]["IdClient"];
+                    /** @description L'identifiant de la situation à manipuler. */
+                    IdSituation: components["parameters"]["IdSituation"];
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                200: components["responses"]["FactureCommercialeArray"];
+                400: components["responses"]["BadRequest"];
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                404: components["responses"]["NotFound"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
+        put?: never;
+        /** @description Ajoute une facture commerciale pour une situation (tenant client). */
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description L'identifiant du dossier à manipuler. */
+                    IdDossier: components["parameters"]["IdDossier"];
+                    /** @description L'identifiant du client à manipuler. */
+                    IdClient: components["parameters"]["IdClient"];
+                    /** @description L'identifiant de la situation à manipuler. */
+                    IdSituation: components["parameters"]["IdSituation"];
+                };
+                cookie?: never;
+            };
+            requestBody: components["requestBodies"]["FactureCommerciale"];
+            responses: {
+                201: components["responses"]["Id"];
+                400: components["responses"]["BadRequest"];
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                404: components["responses"]["NotFound"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/v1/calliope/utilisateur/dossiers/{IdDossier}/clients/{IdClient}/situations/{IdSituation}/factures-commerciales/{IdFactureCommerciale}": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                /** @description L'identifiant du dossier à manipuler. */
+                IdDossier: components["parameters"]["IdDossier"];
+                /** @description L'identifiant du client à manipuler. */
+                IdClient: components["parameters"]["IdClient"];
+                /** @description L'identifiant de la situation à manipuler. */
+                IdSituation: components["parameters"]["IdSituation"];
+                /** @description L'identifiant de la facture commerciale à manipuler. */
+                IdFactureCommerciale: components["parameters"]["IdFactureCommerciale"];
+            };
+            cookie?: never;
+        };
+        /** @description Récupère une facture commerciale pour une situation (tenant client). */
+        get: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description L'identifiant du dossier à manipuler. */
+                    IdDossier: components["parameters"]["IdDossier"];
+                    /** @description L'identifiant du client à manipuler. */
+                    IdClient: components["parameters"]["IdClient"];
+                    /** @description L'identifiant de la situation à manipuler. */
+                    IdSituation: components["parameters"]["IdSituation"];
+                    /** @description L'identifiant de la facture commerciale à manipuler. */
+                    IdFactureCommerciale: components["parameters"]["IdFactureCommerciale"];
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                200: components["responses"]["FactureCommerciale"];
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                404: components["responses"]["NotFound"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
+        put?: never;
+        post?: never;
+        /** @description Supprime une facture commerciale pour une situation (tenant client). */
+        delete: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description L'identifiant du dossier à manipuler. */
+                    IdDossier: components["parameters"]["IdDossier"];
+                    /** @description L'identifiant du client à manipuler. */
+                    IdClient: components["parameters"]["IdClient"];
+                    /** @description L'identifiant de la situation à manipuler. */
+                    IdSituation: components["parameters"]["IdSituation"];
+                    /** @description L'identifiant de la facture commerciale à manipuler. */
+                    IdFactureCommerciale: components["parameters"]["IdFactureCommerciale"];
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description No Content */
+                204: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content?: never;
+                };
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                404: components["responses"]["NotFound"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
+        options?: never;
+        head?: never;
+        /** @description Modifie une facture commerciale pour une situation (tenant client). */
+        patch: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description L'identifiant du dossier à manipuler. */
+                    IdDossier: components["parameters"]["IdDossier"];
+                    /** @description L'identifiant du client à manipuler. */
+                    IdClient: components["parameters"]["IdClient"];
+                    /** @description L'identifiant de la situation à manipuler. */
+                    IdSituation: components["parameters"]["IdSituation"];
+                    /** @description L'identifiant de la facture commerciale à manipuler. */
+                    IdFactureCommerciale: components["parameters"]["IdFactureCommerciale"];
+                };
+                cookie?: never;
+            };
+            requestBody: components["requestBodies"]["FactureCommerciale"];
+            responses: {
+                /** @description No Content */
+                204: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content?: never;
+                };
+                400: components["responses"]["BadRequest"];
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                404: components["responses"]["NotFound"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
+        trace?: never;
+    };
+    "/v1/calliope/utilisateur/dossiers/{IdDossier}/clients/{IdClient}/situations/{IdSituation}/avoirs": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                /** @description L'identifiant du dossier à manipuler. */
+                IdDossier: components["parameters"]["IdDossier"];
+                /** @description L'identifiant du client à manipuler. */
+                IdClient: components["parameters"]["IdClient"];
+                /** @description L'identifiant de la situation à manipuler. */
+                IdSituation: components["parameters"]["IdSituation"];
+            };
+            cookie?: never;
+        };
+        /** @description Récupère tous les avoirs pour une situation (tenant client). */
+        get: {
+            parameters: {
+                query?: {
+                    /** @description La clé du dernier résultat à parcourir. */
+                    "Pagination.Key"?: components["parameters"]["Pagination.Key"];
+                    /** @description Le numéro de la page à obtenir. */
+                    "Pagination.Page"?: components["parameters"]["Pagination.Page"];
+                    /** @description Le nombre maximum de résultats à obtenir. */
+                    "Pagination.Limit"?: components["parameters"]["Pagination.Limit"];
+                    /** @description La rubrique utilisée pour trier les résultats. */
+                    "Sort.By"?: components["parameters"]["Sort.By"];
+                    /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
+                    "Sort.Order"?: components["parameters"]["Sort.Order"];
+                };
+                header?: never;
+                path: {
+                    /** @description L'identifiant du dossier à manipuler. */
+                    IdDossier: components["parameters"]["IdDossier"];
+                    /** @description L'identifiant du client à manipuler. */
+                    IdClient: components["parameters"]["IdClient"];
+                    /** @description L'identifiant de la situation à manipuler. */
+                    IdSituation: components["parameters"]["IdSituation"];
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                200: components["responses"]["AvoirArray"];
+                400: components["responses"]["BadRequest"];
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                404: components["responses"]["NotFound"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
+        put?: never;
+        /** @description Ajoute un avoir pour une situation (tenant client). */
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description L'identifiant du dossier à manipuler. */
+                    IdDossier: components["parameters"]["IdDossier"];
+                    /** @description L'identifiant du client à manipuler. */
+                    IdClient: components["parameters"]["IdClient"];
+                    /** @description L'identifiant de la situation à manipuler. */
+                    IdSituation: components["parameters"]["IdSituation"];
+                };
+                cookie?: never;
+            };
+            requestBody: components["requestBodies"]["Avoir"];
+            responses: {
+                201: components["responses"]["Id"];
+                400: components["responses"]["BadRequest"];
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                404: components["responses"]["NotFound"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/v1/calliope/utilisateur/dossiers/{IdDossier}/clients/{IdClient}/situations/{IdSituation}/avoirs/{IdAvoir}": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                /** @description L'identifiant du dossier à manipuler. */
+                IdDossier: components["parameters"]["IdDossier"];
+                /** @description L'identifiant du client à manipuler. */
+                IdClient: components["parameters"]["IdClient"];
+                /** @description L'identifiant de la situation à manipuler. */
+                IdSituation: components["parameters"]["IdSituation"];
+                /** @description L'identifiant de l'avoir à manipuler. */
+                IdAvoir: components["parameters"]["IdAvoir"];
+            };
+            cookie?: never;
+        };
+        /** @description Récupère un avoir pour une situation (tenant client). */
+        get: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description L'identifiant du dossier à manipuler. */
+                    IdDossier: components["parameters"]["IdDossier"];
+                    /** @description L'identifiant du client à manipuler. */
+                    IdClient: components["parameters"]["IdClient"];
+                    /** @description L'identifiant de la situation à manipuler. */
+                    IdSituation: components["parameters"]["IdSituation"];
+                    /** @description L'identifiant de l'avoir à manipuler. */
+                    IdAvoir: components["parameters"]["IdAvoir"];
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                200: components["responses"]["Avoir"];
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                404: components["responses"]["NotFound"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
+        put?: never;
+        post?: never;
+        /** @description Supprime un avoir pour une situation (tenant client). */
+        delete: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description L'identifiant du dossier à manipuler. */
+                    IdDossier: components["parameters"]["IdDossier"];
+                    /** @description L'identifiant du client à manipuler. */
+                    IdClient: components["parameters"]["IdClient"];
+                    /** @description L'identifiant de la situation à manipuler. */
+                    IdSituation: components["parameters"]["IdSituation"];
+                    /** @description L'identifiant de l'avoir à manipuler. */
+                    IdAvoir: components["parameters"]["IdAvoir"];
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description No Content */
+                204: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content?: never;
+                };
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                404: components["responses"]["NotFound"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
+        options?: never;
+        head?: never;
+        /** @description Modifie un avoir pour une situation (tenant client). */
+        patch: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description L'identifiant du dossier à manipuler. */
+                    IdDossier: components["parameters"]["IdDossier"];
+                    /** @description L'identifiant du client à manipuler. */
+                    IdClient: components["parameters"]["IdClient"];
+                    /** @description L'identifiant de la situation à manipuler. */
+                    IdSituation: components["parameters"]["IdSituation"];
+                    /** @description L'identifiant de l'avoir à manipuler. */
+                    IdAvoir: components["parameters"]["IdAvoir"];
+                };
+                cookie?: never;
+            };
+            requestBody: components["requestBodies"]["Avoir"];
+            responses: {
+                /** @description No Content */
+                204: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content?: never;
+                };
+                400: components["responses"]["BadRequest"];
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                404: components["responses"]["NotFound"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
+        trace?: never;
+    };
+    "/v1/calliope/utilisateur/dossiers/{IdDossier}/clients/{IdClient}/situations/{IdSituation}/acomptes": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                /** @description L'identifiant du dossier à manipuler. */
+                IdDossier: components["parameters"]["IdDossier"];
+                /** @description L'identifiant du client à manipuler. */
+                IdClient: components["parameters"]["IdClient"];
+                /** @description L'identifiant de la situation à manipuler. */
+                IdSituation: components["parameters"]["IdSituation"];
+            };
+            cookie?: never;
+        };
+        /** @description Récupère tous les acomptes pour une situation (tenant client). */
+        get: {
+            parameters: {
+                query?: {
+                    /** @description La clé du dernier résultat à parcourir. */
+                    "Pagination.Key"?: components["parameters"]["Pagination.Key"];
+                    /** @description Le numéro de la page à obtenir. */
+                    "Pagination.Page"?: components["parameters"]["Pagination.Page"];
+                    /** @description Le nombre maximum de résultats à obtenir. */
+                    "Pagination.Limit"?: components["parameters"]["Pagination.Limit"];
+                    /** @description La rubrique utilisée pour trier les résultats. */
+                    "Sort.By"?: components["parameters"]["Sort.By"];
+                    /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
+                    "Sort.Order"?: components["parameters"]["Sort.Order"];
+                };
+                header?: never;
+                path: {
+                    /** @description L'identifiant du dossier à manipuler. */
+                    IdDossier: components["parameters"]["IdDossier"];
+                    /** @description L'identifiant du client à manipuler. */
+                    IdClient: components["parameters"]["IdClient"];
+                    /** @description L'identifiant de la situation à manipuler. */
+                    IdSituation: components["parameters"]["IdSituation"];
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                200: components["responses"]["AcompteArray"];
+                400: components["responses"]["BadRequest"];
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                404: components["responses"]["NotFound"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
+        put?: never;
+        /** @description Ajoute un acompte pour une situation (tenant client). */
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description L'identifiant du dossier à manipuler. */
+                    IdDossier: components["parameters"]["IdDossier"];
+                    /** @description L'identifiant du client à manipuler. */
+                    IdClient: components["parameters"]["IdClient"];
+                    /** @description L'identifiant de la situation à manipuler. */
+                    IdSituation: components["parameters"]["IdSituation"];
+                };
+                cookie?: never;
+            };
+            requestBody: components["requestBodies"]["Acompte"];
+            responses: {
+                201: components["responses"]["Id"];
+                400: components["responses"]["BadRequest"];
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                404: components["responses"]["NotFound"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/v1/calliope/utilisateur/dossiers/{IdDossier}/clients/{IdClient}/situations/{IdSituation}/acomptes/{IdAcompte}": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                /** @description L'identifiant du dossier à manipuler. */
+                IdDossier: components["parameters"]["IdDossier"];
+                /** @description L'identifiant du client à manipuler. */
+                IdClient: components["parameters"]["IdClient"];
+                /** @description L'identifiant de la situation à manipuler. */
+                IdSituation: components["parameters"]["IdSituation"];
+                /** @description L'identifiant de l'acompte à manipuler. */
+                IdAcompte: components["parameters"]["IdAcompte"];
+            };
+            cookie?: never;
+        };
+        /** @description Récupère un acompte pour une situation (tenant client). */
+        get: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description L'identifiant du dossier à manipuler. */
+                    IdDossier: components["parameters"]["IdDossier"];
+                    /** @description L'identifiant du client à manipuler. */
+                    IdClient: components["parameters"]["IdClient"];
+                    /** @description L'identifiant de la situation à manipuler. */
+                    IdSituation: components["parameters"]["IdSituation"];
+                    /** @description L'identifiant de l'acompte à manipuler. */
+                    IdAcompte: components["parameters"]["IdAcompte"];
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                200: components["responses"]["Acompte"];
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                404: components["responses"]["NotFound"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
+        put?: never;
+        post?: never;
+        /** @description Supprime un acompte pour une situation (tenant client). */
+        delete: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description L'identifiant du dossier à manipuler. */
+                    IdDossier: components["parameters"]["IdDossier"];
+                    /** @description L'identifiant du client à manipuler. */
+                    IdClient: components["parameters"]["IdClient"];
+                    /** @description L'identifiant de la situation à manipuler. */
+                    IdSituation: components["parameters"]["IdSituation"];
+                    /** @description L'identifiant de l'acompte à manipuler. */
+                    IdAcompte: components["parameters"]["IdAcompte"];
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description No Content */
+                204: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content?: never;
+                };
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                404: components["responses"]["NotFound"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
+        options?: never;
+        head?: never;
+        /** @description Modifie un acompte pour une situation (tenant client). */
+        patch: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description L'identifiant du dossier à manipuler. */
+                    IdDossier: components["parameters"]["IdDossier"];
+                    /** @description L'identifiant du client à manipuler. */
+                    IdClient: components["parameters"]["IdClient"];
+                    /** @description L'identifiant de la situation à manipuler. */
+                    IdSituation: components["parameters"]["IdSituation"];
+                    /** @description L'identifiant de l'acompte à manipuler. */
+                    IdAcompte: components["parameters"]["IdAcompte"];
+                };
+                cookie?: never;
+            };
+            requestBody: components["requestBodies"]["Acompte"];
+            responses: {
+                /** @description No Content */
+                204: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content?: never;
+                };
+                400: components["responses"]["BadRequest"];
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                404: components["responses"]["NotFound"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
+        trace?: never;
+    };
+    "/v1/calliope/utilisateur/dossiers/{IdDossier}/clients/{IdClient}/situations/{IdSituation}/associe-factures-commerciales/{IdFactureCommerciale}": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                /** @description L'identifiant du dossier à manipuler. */
+                IdDossier: components["parameters"]["IdDossier"];
+                /** @description L'identifiant du client à manipuler. */
+                IdClient: components["parameters"]["IdClient"];
+                /** @description L'identifiant de la situation à manipuler. */
+                IdSituation: components["parameters"]["IdSituation"];
+                /** @description L'identifiant de la facture commerciale à manipuler. */
+                IdFactureCommerciale: components["parameters"]["IdFactureCommerciale"];
+            };
+            cookie?: never;
+        };
+        get?: never;
+        /** @description Associe une facture commerciale à une situation pour un client. */
+        put: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description L'identifiant du dossier à manipuler. */
+                    IdDossier: components["parameters"]["IdDossier"];
+                    /** @description L'identifiant du client à manipuler. */
+                    IdClient: components["parameters"]["IdClient"];
+                    /** @description L'identifiant de la situation à manipuler. */
+                    IdSituation: components["parameters"]["IdSituation"];
+                    /** @description L'identifiant de la facture commerciale à manipuler. */
+                    IdFactureCommerciale: components["parameters"]["IdFactureCommerciale"];
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description No Content */
+                204: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content?: never;
+                };
+                400: components["responses"]["BadRequest"];
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                404: components["responses"]["NotFound"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
+        post?: never;
+        /** @description Dissocie une facture commerciale d'une situation pour un client. */
+        delete: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description L'identifiant du dossier à manipuler. */
+                    IdDossier: components["parameters"]["IdDossier"];
+                    /** @description L'identifiant du client à manipuler. */
+                    IdClient: components["parameters"]["IdClient"];
+                    /** @description L'identifiant de la situation à manipuler. */
+                    IdSituation: components["parameters"]["IdSituation"];
+                    /** @description L'identifiant de la facture commerciale à manipuler. */
+                    IdFactureCommerciale: components["parameters"]["IdFactureCommerciale"];
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description No Content */
+                204: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content?: never;
+                };
+                400: components["responses"]["BadRequest"];
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                404: components["responses"]["NotFound"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/v1/calliope/utilisateur/dossiers/{IdDossier}/clients/{IdClient}/situations/{IdSituation}/associe-avoirs/{IdAvoir}": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                /** @description L'identifiant du dossier à manipuler. */
+                IdDossier: components["parameters"]["IdDossier"];
+                /** @description L'identifiant du client à manipuler. */
+                IdClient: components["parameters"]["IdClient"];
+                /** @description L'identifiant de la situation à manipuler. */
+                IdSituation: components["parameters"]["IdSituation"];
+                /** @description L'identifiant de l'avoir à manipuler. */
+                IdAvoir: components["parameters"]["IdAvoir"];
+            };
+            cookie?: never;
+        };
+        get?: never;
+        /** @description Associe un avoir à une situation pour un client. */
+        put: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description L'identifiant du dossier à manipuler. */
+                    IdDossier: components["parameters"]["IdDossier"];
+                    /** @description L'identifiant du client à manipuler. */
+                    IdClient: components["parameters"]["IdClient"];
+                    /** @description L'identifiant de la situation à manipuler. */
+                    IdSituation: components["parameters"]["IdSituation"];
+                    /** @description L'identifiant de l'avoir à manipuler. */
+                    IdAvoir: components["parameters"]["IdAvoir"];
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description No Content */
+                204: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content?: never;
+                };
+                400: components["responses"]["BadRequest"];
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                404: components["responses"]["NotFound"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
+        post?: never;
+        /** @description Dissocie un avoir d'une situation pour un client. */
+        delete: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description L'identifiant du dossier à manipuler. */
+                    IdDossier: components["parameters"]["IdDossier"];
+                    /** @description L'identifiant du client à manipuler. */
+                    IdClient: components["parameters"]["IdClient"];
+                    /** @description L'identifiant de la situation à manipuler. */
+                    IdSituation: components["parameters"]["IdSituation"];
+                    /** @description L'identifiant de l'avoir à manipuler. */
+                    IdAvoir: components["parameters"]["IdAvoir"];
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description No Content */
+                204: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content?: never;
+                };
+                400: components["responses"]["BadRequest"];
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                404: components["responses"]["NotFound"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/v1/calliope/utilisateur/dossiers/{IdDossier}/clients/{IdClient}/situations/{IdSituation}/associe-acomptes/{IdAcompte}": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                /** @description L'identifiant du dossier à manipuler. */
+                IdDossier: components["parameters"]["IdDossier"];
+                /** @description L'identifiant du client à manipuler. */
+                IdClient: components["parameters"]["IdClient"];
+                /** @description L'identifiant de la situation à manipuler. */
+                IdSituation: components["parameters"]["IdSituation"];
+                /** @description L'identifiant de l'acompte à manipuler. */
+                IdAcompte: components["parameters"]["IdAcompte"];
+            };
+            cookie?: never;
+        };
+        get?: never;
+        /** @description Associe un acompte à une situation pour un client. */
+        put: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description L'identifiant du dossier à manipuler. */
+                    IdDossier: components["parameters"]["IdDossier"];
+                    /** @description L'identifiant du client à manipuler. */
+                    IdClient: components["parameters"]["IdClient"];
+                    /** @description L'identifiant de la situation à manipuler. */
+                    IdSituation: components["parameters"]["IdSituation"];
+                    /** @description L'identifiant de l'acompte à manipuler. */
+                    IdAcompte: components["parameters"]["IdAcompte"];
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description No Content */
+                204: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content?: never;
+                };
+                400: components["responses"]["BadRequest"];
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                404: components["responses"]["NotFound"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
+        post?: never;
+        /** @description Dissocie un acompte d'une situation pour un client. */
+        delete: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description L'identifiant du dossier à manipuler. */
+                    IdDossier: components["parameters"]["IdDossier"];
+                    /** @description L'identifiant du client à manipuler. */
+                    IdClient: components["parameters"]["IdClient"];
+                    /** @description L'identifiant de la situation à manipuler. */
+                    IdSituation: components["parameters"]["IdSituation"];
+                    /** @description L'identifiant de l'acompte à manipuler. */
+                    IdAcompte: components["parameters"]["IdAcompte"];
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description No Content */
+                204: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content?: never;
+                };
+                400: components["responses"]["BadRequest"];
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                404: components["responses"]["NotFound"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/v1/calliope/utilisateur/dossiers/{IdDossier}/fournisseurs": {
         parameters: {
             query?: never;
@@ -9748,8 +11540,10 @@ export interface paths {
                     "Pagination.Page"?: components["parameters"]["Pagination.Page"];
                     /** @description Le nombre maximum de résultats à obtenir. */
                     "Pagination.Limit"?: components["parameters"]["Pagination.Limit"];
-                    /** @description Le tri des résultats est effectué dans l'ordre décroissant. */
-                    "Pagination.Reverse"?: components["parameters"]["Pagination.Reverse"];
+                    /** @description La rubrique utilisée pour trier les résultats. */
+                    "Sort.By"?: components["parameters"]["Sort.By"];
+                    /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
+                    "Sort.Order"?: components["parameters"]["Sort.Order"];
                 };
                 header?: never;
                 path: {
@@ -9915,8 +11709,10 @@ export interface paths {
                     "Pagination.Page"?: components["parameters"]["Pagination.Page"];
                     /** @description Le nombre maximum de résultats à obtenir. */
                     "Pagination.Limit"?: components["parameters"]["Pagination.Limit"];
-                    /** @description Le tri des résultats est effectué dans l'ordre décroissant. */
-                    "Pagination.Reverse"?: components["parameters"]["Pagination.Reverse"];
+                    /** @description La rubrique utilisée pour trier les résultats. */
+                    "Sort.By"?: components["parameters"]["Sort.By"];
+                    /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
+                    "Sort.Order"?: components["parameters"]["Sort.Order"];
                 };
                 header?: never;
                 path: {
@@ -10139,8 +11935,10 @@ export interface paths {
                     "Pagination.Page"?: components["parameters"]["Pagination.Page"];
                     /** @description Le nombre maximum de résultats à obtenir. */
                     "Pagination.Limit"?: components["parameters"]["Pagination.Limit"];
-                    /** @description Le tri des résultats est effectué dans l'ordre décroissant. */
-                    "Pagination.Reverse"?: components["parameters"]["Pagination.Reverse"];
+                    /** @description La rubrique utilisée pour trier les résultats. */
+                    "Sort.By"?: components["parameters"]["Sort.By"];
+                    /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
+                    "Sort.Order"?: components["parameters"]["Sort.Order"];
                 };
                 header?: never;
                 path: {
@@ -10374,8 +12172,10 @@ export interface paths {
                     "Pagination.Page"?: components["parameters"]["Pagination.Page"];
                     /** @description Le nombre maximum de résultats à obtenir. */
                     "Pagination.Limit"?: components["parameters"]["Pagination.Limit"];
-                    /** @description Le tri des résultats est effectué dans l'ordre décroissant. */
-                    "Pagination.Reverse"?: components["parameters"]["Pagination.Reverse"];
+                    /** @description La rubrique utilisée pour trier les résultats. */
+                    "Sort.By"?: components["parameters"]["Sort.By"];
+                    /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
+                    "Sort.Order"?: components["parameters"]["Sort.Order"];
                 };
                 header?: never;
                 path: {
@@ -10596,8 +12396,10 @@ export interface paths {
                     "Pagination.Page"?: components["parameters"]["Pagination.Page"];
                     /** @description Le nombre maximum de résultats à obtenir. */
                     "Pagination.Limit"?: components["parameters"]["Pagination.Limit"];
-                    /** @description Le tri des résultats est effectué dans l'ordre décroissant. */
-                    "Pagination.Reverse"?: components["parameters"]["Pagination.Reverse"];
+                    /** @description La rubrique utilisée pour trier les résultats. */
+                    "Sort.By"?: components["parameters"]["Sort.By"];
+                    /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
+                    "Sort.Order"?: components["parameters"]["Sort.Order"];
                 };
                 header?: never;
                 path: {
@@ -10824,7 +12626,7 @@ export interface paths {
             };
             cookie?: never;
         };
-        /** @description Recupère toutes les familles d'articles pour un dossier. */
+        /** @description Récupère toutes les familles d'articles pour un dossier. */
         get: {
             parameters: {
                 query?: {
@@ -10834,8 +12636,10 @@ export interface paths {
                     "Pagination.Page"?: components["parameters"]["Pagination.Page"];
                     /** @description Le nombre maximum de résultats à obtenir. */
                     "Pagination.Limit"?: components["parameters"]["Pagination.Limit"];
-                    /** @description Le tri des résultats est effectué dans l'ordre décroissant. */
-                    "Pagination.Reverse"?: components["parameters"]["Pagination.Reverse"];
+                    /** @description La rubrique utilisée pour trier les résultats. */
+                    "Sort.By"?: components["parameters"]["Sort.By"];
+                    /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
+                    "Sort.Order"?: components["parameters"]["Sort.Order"];
                 };
                 header?: never;
                 path: {
@@ -11011,8 +12815,10 @@ export interface paths {
                     "Pagination.Page"?: components["parameters"]["Pagination.Page"];
                     /** @description Le nombre maximum de résultats à obtenir. */
                     "Pagination.Limit"?: components["parameters"]["Pagination.Limit"];
-                    /** @description Le tri des résultats est effectué dans l'ordre décroissant. */
-                    "Pagination.Reverse"?: components["parameters"]["Pagination.Reverse"];
+                    /** @description La rubrique utilisée pour trier les résultats. */
+                    "Sort.By"?: components["parameters"]["Sort.By"];
+                    /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
+                    "Sort.Order"?: components["parameters"]["Sort.Order"];
                 };
                 header?: never;
                 path: {
@@ -11167,8 +12973,10 @@ export interface paths {
                     "Pagination.Page"?: components["parameters"]["Pagination.Page"];
                     /** @description Le nombre maximum de résultats à obtenir. */
                     "Pagination.Limit"?: components["parameters"]["Pagination.Limit"];
-                    /** @description Le tri des résultats est effectué dans l'ordre décroissant. */
-                    "Pagination.Reverse"?: components["parameters"]["Pagination.Reverse"];
+                    /** @description La rubrique utilisée pour trier les résultats. */
+                    "Sort.By"?: components["parameters"]["Sort.By"];
+                    /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
+                    "Sort.Order"?: components["parameters"]["Sort.Order"];
                 };
                 header?: never;
                 path: {
@@ -11404,8 +13212,10 @@ export interface paths {
                     "Pagination.Page"?: components["parameters"]["Pagination.Page"];
                     /** @description Le nombre maximum de résultats à obtenir. */
                     "Pagination.Limit"?: components["parameters"]["Pagination.Limit"];
-                    /** @description Le tri des résultats est effectué dans l'ordre décroissant. */
-                    "Pagination.Reverse"?: components["parameters"]["Pagination.Reverse"];
+                    /** @description La rubrique utilisée pour trier les résultats. */
+                    "Sort.By"?: components["parameters"]["Sort.By"];
+                    /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
+                    "Sort.Order"?: components["parameters"]["Sort.Order"];
                 };
                 header?: never;
                 path: {
@@ -11639,8 +13449,10 @@ export interface paths {
                     "Pagination.Page"?: components["parameters"]["Pagination.Page"];
                     /** @description Le nombre maximum de résultats à obtenir. */
                     "Pagination.Limit"?: components["parameters"]["Pagination.Limit"];
-                    /** @description Le tri des résultats est effectué dans l'ordre décroissant. */
-                    "Pagination.Reverse"?: components["parameters"]["Pagination.Reverse"];
+                    /** @description La rubrique utilisée pour trier les résultats. */
+                    "Sort.By"?: components["parameters"]["Sort.By"];
+                    /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
+                    "Sort.Order"?: components["parameters"]["Sort.Order"];
                 };
                 header?: never;
                 path: {
@@ -12800,6 +14612,8 @@ export interface components {
              */
             PourcentageCharge?: number | null;
         };
+        /** SituationRequest */
+        SituationRequest: Record<string, never>;
         /** StatutJuridiqueRequest */
         StatutJuridiqueRequest: {
             /** @description Le libellé. */
@@ -14474,6 +16288,21 @@ export interface components {
              */
             PrixTotalNetTtc: number;
         };
+        /** SituationResponse */
+        SituationResponse: components["schemas"]["IdWrapper"] & components["schemas"]["HorodatageWrapper"] & Record<string, never>;
+        /** SituationAvecClientResponse */
+        SituationAvecClientResponse: components["schemas"]["IdWrapper"] & components["schemas"]["HorodatageWrapper"] & {
+            Client: components["schemas"]["ClientResponse"];
+        };
+        /** SituationAvecDevisResponse */
+        SituationAvecDevisResponse: components["schemas"]["IdWrapper"] & components["schemas"]["HorodatageWrapper"] & {
+            Devis: components["schemas"]["DevisResponse"];
+        };
+        /** SituationAvecClientEtDevisResponse */
+        SituationAvecClientEtDevisResponse: components["schemas"]["IdWrapper"] & components["schemas"]["HorodatageWrapper"] & {
+            Client: components["schemas"]["ClientResponse"];
+            Devis: components["schemas"]["DevisResponse"];
+        };
         /** StatutJuridiqueResponse */
         StatutJuridiqueResponse: components["schemas"]["IdWrapper"] & components["schemas"]["HorodatageWrapper"] & {
             /** @description Le libellé. */
@@ -14854,6 +16683,42 @@ export interface components {
                 "application/json": components["schemas"]["LigneFactureCommercialeResponse"];
             };
         };
+        /** @description Une situation */
+        Situation: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": components["schemas"]["SituationResponse"];
+            };
+        };
+        /** @description Une situation */
+        SituationAvecClient: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": components["schemas"]["SituationAvecClientResponse"];
+            };
+        };
+        /** @description Une situation */
+        SituationAvecDevis: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": components["schemas"]["SituationAvecDevisResponse"];
+            };
+        };
+        /** @description Une situation */
+        SituationAvecClientEtDevis: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": components["schemas"]["SituationAvecClientEtDevisResponse"];
+            };
+        };
         /** @description Un statut juridique */
         StatutJuridique: {
             headers: {
@@ -15226,6 +17091,54 @@ export interface components {
                 };
             };
         };
+        /** @description Un tableau de situations */
+        SituationArray: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    Info: components["schemas"]["SituationResponse"][];
+                    Extra: components["schemas"]["ExtraWrapper"];
+                };
+            };
+        };
+        /** @description Un tableau de situations */
+        SituationAvecClientArray: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    Info: components["schemas"]["SituationAvecClientResponse"][];
+                    Extra: components["schemas"]["ExtraWrapper"];
+                };
+            };
+        };
+        /** @description Un tableau de situations */
+        SituationAvecDevisArray: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    Info: components["schemas"]["SituationAvecDevisResponse"][];
+                    Extra: components["schemas"]["ExtraWrapper"];
+                };
+            };
+        };
+        /** @description Un tableau de situations */
+        SituationAvecClientEtDevisArray: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    Info: components["schemas"]["SituationAvecClientEtDevisResponse"][];
+                    Extra: components["schemas"]["ExtraWrapper"];
+                };
+            };
+        };
         /** @description Un tableau de statuts juridiques */
         StatutJuridiqueArray: {
             headers: {
@@ -15370,10 +17283,10 @@ export interface components {
         "Pagination.Page": number;
         /** @description Le nombre maximum de résultats à obtenir. */
         "Pagination.Limit": number;
-        /** @description Le tri des résultats est effectué dans l'ordre décroissant. */
-        "Pagination.Reverse": boolean;
-        /** @description L'expression à rechercher. */
-        Query: string;
+        /** @description La rubrique utilisée pour trier les résultats. */
+        "Sort.By": string;
+        /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
+        "Sort.Order": "A" | "D";
         /** @description L'identifiant de la civilité à manipuler. */
         IdCivilite: number;
         /** @description L'identifiant du statut juridique à manipuler. */
@@ -15408,6 +17321,8 @@ export interface components {
         IdAcompte: number;
         /** @description L'identifiant de l'avoir à manipuler. */
         IdAvoir: number;
+        /** @description L'identifiant de la situation à manipuler. */
+        IdSituation: number;
         /** @description L'identifiant de la ligne de devis à manipuler. */
         IdLigneDevis: number;
         /** @description L'identifiant de la ligne de facture commerciale à manipuler. */
@@ -15552,6 +17467,11 @@ export interface components {
                 "application/json": components["schemas"]["LigneFactureCommercialeRequest"];
             };
         };
+        Situation: {
+            content: {
+                "application/json": components["schemas"]["SituationRequest"];
+            };
+        };
         StatutJuridique: {
             content: {
                 "application/json": components["schemas"]["StatutJuridiqueRequest"];
@@ -15624,6 +17544,7 @@ export type SchemaLigneAcompteRequest = components['schemas']['LigneAcompteReque
 export type SchemaLigneAvoirRequest = components['schemas']['LigneAvoirRequest'];
 export type SchemaLigneDevisRequest = components['schemas']['LigneDevisRequest'];
 export type SchemaLigneFactureCommercialeRequest = components['schemas']['LigneFactureCommercialeRequest'];
+export type SchemaSituationRequest = components['schemas']['SituationRequest'];
 export type SchemaStatutJuridiqueRequest = components['schemas']['StatutJuridiqueRequest'];
 export type SchemaTvaRequest = components['schemas']['TvaRequest'];
 export type SchemaUniteRequest = components['schemas']['UniteRequest'];
@@ -15657,6 +17578,10 @@ export type SchemaLigneAcompteResponse = components['schemas']['LigneAcompteResp
 export type SchemaLigneAvoirResponse = components['schemas']['LigneAvoirResponse'];
 export type SchemaLigneDevisResponse = components['schemas']['LigneDevisResponse'];
 export type SchemaLigneFactureCommercialeResponse = components['schemas']['LigneFactureCommercialeResponse'];
+export type SchemaSituationResponse = components['schemas']['SituationResponse'];
+export type SchemaSituationAvecClientResponse = components['schemas']['SituationAvecClientResponse'];
+export type SchemaSituationAvecDevisResponse = components['schemas']['SituationAvecDevisResponse'];
+export type SchemaSituationAvecClientEtDevisResponse = components['schemas']['SituationAvecClientEtDevisResponse'];
 export type SchemaStatutJuridiqueResponse = components['schemas']['StatutJuridiqueResponse'];
 export type SchemaTvaResponse = components['schemas']['TvaResponse'];
 export type SchemaUniteResponse = components['schemas']['UniteResponse'];
@@ -15696,6 +17621,10 @@ export type ResponseLigneAcompte = components['responses']['LigneAcompte'];
 export type ResponseLigneAvoir = components['responses']['LigneAvoir'];
 export type ResponseLigneDevis = components['responses']['LigneDevis'];
 export type ResponseLigneFactureCommerciale = components['responses']['LigneFactureCommerciale'];
+export type ResponseSituation = components['responses']['Situation'];
+export type ResponseSituationAvecClient = components['responses']['SituationAvecClient'];
+export type ResponseSituationAvecDevis = components['responses']['SituationAvecDevis'];
+export type ResponseSituationAvecClientEtDevis = components['responses']['SituationAvecClientEtDevis'];
 export type ResponseStatutJuridique = components['responses']['StatutJuridique'];
 export type ResponseTva = components['responses']['Tva'];
 export type ResponseUnite = components['responses']['Unite'];
@@ -15728,6 +17657,10 @@ export type ResponseLigneAcompteArray = components['responses']['LigneAcompteArr
 export type ResponseLigneAvoirArray = components['responses']['LigneAvoirArray'];
 export type ResponseLigneDevisArray = components['responses']['LigneDevisArray'];
 export type ResponseLigneFactureCommercialeArray = components['responses']['LigneFactureCommercialeArray'];
+export type ResponseSituationArray = components['responses']['SituationArray'];
+export type ResponseSituationAvecClientArray = components['responses']['SituationAvecClientArray'];
+export type ResponseSituationAvecDevisArray = components['responses']['SituationAvecDevisArray'];
+export type ResponseSituationAvecClientEtDevisArray = components['responses']['SituationAvecClientEtDevisArray'];
 export type ResponseStatutJuridiqueArray = components['responses']['StatutJuridiqueArray'];
 export type ResponseTvaArray = components['responses']['TvaArray'];
 export type ResponseUniteArray = components['responses']['UniteArray'];
@@ -15742,8 +17675,8 @@ export type ResponseServiceUnavailable = components['responses']['ServiceUnavail
 export type ParameterPaginationKey = components['parameters']['Pagination.Key'];
 export type ParameterPaginationPage = components['parameters']['Pagination.Page'];
 export type ParameterPaginationLimit = components['parameters']['Pagination.Limit'];
-export type ParameterPaginationReverse = components['parameters']['Pagination.Reverse'];
-export type ParameterQuery = components['parameters']['Query'];
+export type ParameterSortBy = components['parameters']['Sort.By'];
+export type ParameterSortOrder = components['parameters']['Sort.Order'];
 export type ParameterIdCivilite = components['parameters']['IdCivilite'];
 export type ParameterIdStatutJuridique = components['parameters']['IdStatutJuridique'];
 export type ParameterIdTva = components['parameters']['IdTva'];
@@ -15761,6 +17694,7 @@ export type ParameterIdDevis = components['parameters']['IdDevis'];
 export type ParameterIdFactureCommerciale = components['parameters']['IdFactureCommerciale'];
 export type ParameterIdAcompte = components['parameters']['IdAcompte'];
 export type ParameterIdAvoir = components['parameters']['IdAvoir'];
+export type ParameterIdSituation = components['parameters']['IdSituation'];
 export type ParameterIdLigneDevis = components['parameters']['IdLigneDevis'];
 export type ParameterIdLigneFactureCommerciale = components['parameters']['IdLigneFactureCommerciale'];
 export type ParameterIdLigneAcompte = components['parameters']['IdLigneAcompte'];
@@ -15792,6 +17726,7 @@ export type RequestBodyLigneAcompte = components['requestBodies']['LigneAcompte'
 export type RequestBodyLigneAvoir = components['requestBodies']['LigneAvoir'];
 export type RequestBodyLigneDevis = components['requestBodies']['LigneDevis'];
 export type RequestBodyLigneFactureCommerciale = components['requestBodies']['LigneFactureCommerciale'];
+export type RequestBodySituation = components['requestBodies']['Situation'];
 export type RequestBodyStatutJuridique = components['requestBodies']['StatutJuridique'];
 export type RequestBodyTva = components['requestBodies']['Tva'];
 export type RequestBodyUnite = components['requestBodies']['Unite'];
