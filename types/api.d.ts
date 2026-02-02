@@ -15703,7 +15703,7 @@ export interface components {
             /** @description L'identifiant GererMesAffaires. */
             IdGererMesAffaires: string | null;
             /** @description Le code. */
-            Code: string;
+            Code: string | null;
             Acces: components["schemas"]["Acces"];
         };
         /** FactureCommercialeResponse */
