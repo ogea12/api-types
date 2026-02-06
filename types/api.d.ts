@@ -14224,7 +14224,7 @@ export interface components {
              * Format: int64
              * @description L'identifiant du statut juridique.
              */
-            IdStatutJuridique?: number;
+            IdStatutJuridique?: number | null;
             Adresse?: components["schemas"]["AdresseRequest"];
             /**
              * Format: email
@@ -14400,7 +14400,7 @@ export interface components {
              * Format: int64
              * @description L'identifiant du statut juridique.
              */
-            IdStatutJuridique?: number;
+            IdStatutJuridique?: number | null;
             Adresse?: components["schemas"]["AdresseRequest"];
             /**
              * Format: email
@@ -16304,12 +16304,12 @@ export interface components {
             Devis: components["schemas"]["DevisResponse"];
         };
         /** StatutJuridiqueResponse */
-        StatutJuridiqueResponse: components["schemas"]["IdWrapper"] & components["schemas"]["HorodatageWrapper"] & {
+        StatutJuridiqueResponse: (components["schemas"]["IdWrapper"] & components["schemas"]["HorodatageWrapper"] & {
             /** @description Le libellé. */
             Libelle: string;
             /** @description L'abréviation. */
             Abreviation: string;
-        };
+        }) | null;
         /** TvaResponse */
         TvaResponse: components["schemas"]["IdWrapper"] & components["schemas"]["HorodatageWrapper"] & {
             /** @description Le libellé. */
