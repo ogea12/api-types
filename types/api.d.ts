@@ -183,6 +183,8 @@ export interface paths {
                     "Sort.By"?: components["parameters"]["Sort.By"];
                     /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
                     "Sort.Order"?: components["parameters"]["Sort.Order"];
+                    /** @description La recherche textuelle parmi toutes les rubriques. */
+                    Query?: components["parameters"]["Query"];
                 };
                 header?: never;
                 path?: never;
@@ -341,6 +343,8 @@ export interface paths {
                     "Sort.By"?: components["parameters"]["Sort.By"];
                     /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
                     "Sort.Order"?: components["parameters"]["Sort.Order"];
+                    /** @description La recherche textuelle parmi toutes les rubriques. */
+                    Query?: components["parameters"]["Query"];
                 };
                 header?: never;
                 path?: never;
@@ -652,6 +656,8 @@ export interface paths {
                     "Sort.By"?: components["parameters"]["Sort.By"];
                     /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
                     "Sort.Order"?: components["parameters"]["Sort.Order"];
+                    /** @description La recherche textuelle parmi toutes les rubriques. */
+                    Query?: components["parameters"]["Query"];
                 };
                 header?: never;
                 path?: never;
@@ -740,6 +746,8 @@ export interface paths {
                     "Sort.By"?: components["parameters"]["Sort.By"];
                     /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
                     "Sort.Order"?: components["parameters"]["Sort.Order"];
+                    /** @description La recherche textuelle parmi toutes les rubriques. */
+                    Query?: components["parameters"]["Query"];
                 };
                 header?: never;
                 path: {
@@ -836,6 +844,8 @@ export interface paths {
                     "Sort.By"?: components["parameters"]["Sort.By"];
                     /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
                     "Sort.Order"?: components["parameters"]["Sort.Order"];
+                    /** @description La recherche textuelle parmi toutes les rubriques. */
+                    Query?: components["parameters"]["Query"];
                 };
                 header?: never;
                 path: {
@@ -1054,6 +1064,8 @@ export interface paths {
                     "Sort.By"?: components["parameters"]["Sort.By"];
                     /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
                     "Sort.Order"?: components["parameters"]["Sort.Order"];
+                    /** @description La recherche textuelle parmi toutes les rubriques. */
+                    Query?: components["parameters"]["Query"];
                 };
                 header?: never;
                 path?: never;
@@ -1139,6 +1151,8 @@ export interface paths {
                     "Sort.By"?: components["parameters"]["Sort.By"];
                     /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
                     "Sort.Order"?: components["parameters"]["Sort.Order"];
+                    /** @description La recherche textuelle parmi toutes les rubriques. */
+                    Query?: components["parameters"]["Query"];
                 };
                 header?: never;
                 path?: never;
@@ -1300,6 +1314,8 @@ export interface paths {
                     "Sort.By"?: components["parameters"]["Sort.By"];
                     /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
                     "Sort.Order"?: components["parameters"]["Sort.Order"];
+                    /** @description La recherche textuelle parmi toutes les rubriques. */
+                    Query?: components["parameters"]["Query"];
                 };
                 header?: never;
                 path: {
@@ -1571,6 +1587,8 @@ export interface paths {
                     "Sort.By"?: components["parameters"]["Sort.By"];
                     /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
                     "Sort.Order"?: components["parameters"]["Sort.Order"];
+                    /** @description La recherche textuelle parmi toutes les rubriques. */
+                    Query?: components["parameters"]["Query"];
                 };
                 header?: never;
                 path: {
@@ -1675,6 +1693,8 @@ export interface paths {
                     "Sort.By"?: components["parameters"]["Sort.By"];
                     /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
                     "Sort.Order"?: components["parameters"]["Sort.Order"];
+                    /** @description La recherche textuelle parmi toutes les rubriques. */
+                    Query?: components["parameters"]["Query"];
                 };
                 header?: never;
                 path: {
@@ -1874,6 +1894,8 @@ export interface paths {
                     "Sort.By"?: components["parameters"]["Sort.By"];
                     /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
                     "Sort.Order"?: components["parameters"]["Sort.Order"];
+                    /** @description La recherche textuelle parmi toutes les rubriques. */
+                    Query?: components["parameters"]["Query"];
                 };
                 header?: never;
                 path: {
@@ -1984,6 +2006,8 @@ export interface paths {
                     "Sort.By"?: components["parameters"]["Sort.By"];
                     /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
                     "Sort.Order"?: components["parameters"]["Sort.Order"];
+                    /** @description La recherche textuelle parmi toutes les rubriques. */
+                    Query?: components["parameters"]["Query"];
                 };
                 header?: never;
                 path: {
@@ -2086,6 +2110,8 @@ export interface paths {
                     "Sort.By"?: components["parameters"]["Sort.By"];
                     /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
                     "Sort.Order"?: components["parameters"]["Sort.Order"];
+                    /** @description La recherche textuelle parmi toutes les rubriques. */
+                    Query?: components["parameters"]["Query"];
                 };
                 header?: never;
                 path: {
@@ -2182,6 +2208,8 @@ export interface paths {
                     "Sort.By"?: components["parameters"]["Sort.By"];
                     /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
                     "Sort.Order"?: components["parameters"]["Sort.Order"];
+                    /** @description La recherche textuelle parmi toutes les rubriques. */
+                    Query?: components["parameters"]["Query"];
                 };
                 header?: never;
                 path: {
@@ -2637,6 +2665,8 @@ export interface paths {
                     "Sort.By"?: components["parameters"]["Sort.By"];
                     /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
                     "Sort.Order"?: components["parameters"]["Sort.Order"];
+                    /** @description La recherche textuelle parmi toutes les rubriques. */
+                    Query?: components["parameters"]["Query"];
                 };
                 header?: never;
                 path: {
@@ -2741,6 +2771,8 @@ export interface paths {
                     "Sort.By"?: components["parameters"]["Sort.By"];
                     /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
                     "Sort.Order"?: components["parameters"]["Sort.Order"];
+                    /** @description La recherche textuelle parmi toutes les rubriques. */
+                    Query?: components["parameters"]["Query"];
                 };
                 header?: never;
                 path: {
@@ -2940,6 +2972,8 @@ export interface paths {
                     "Sort.By"?: components["parameters"]["Sort.By"];
                     /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
                     "Sort.Order"?: components["parameters"]["Sort.Order"];
+                    /** @description La recherche textuelle parmi toutes les rubriques. */
+                    Query?: components["parameters"]["Query"];
                 };
                 header?: never;
                 path: {
@@ -3050,6 +3084,8 @@ export interface paths {
                     "Sort.By"?: components["parameters"]["Sort.By"];
                     /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
                     "Sort.Order"?: components["parameters"]["Sort.Order"];
+                    /** @description La recherche textuelle parmi toutes les rubriques. */
+                    Query?: components["parameters"]["Query"];
                 };
                 header?: never;
                 path: {
@@ -3249,6 +3285,8 @@ export interface paths {
                     "Sort.By"?: components["parameters"]["Sort.By"];
                     /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
                     "Sort.Order"?: components["parameters"]["Sort.Order"];
+                    /** @description La recherche textuelle parmi toutes les rubriques. */
+                    Query?: components["parameters"]["Query"];
                 };
                 header?: never;
                 path: {
@@ -3357,6 +3395,8 @@ export interface paths {
                     "Sort.By"?: components["parameters"]["Sort.By"];
                     /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
                     "Sort.Order"?: components["parameters"]["Sort.Order"];
+                    /** @description La recherche textuelle parmi toutes les rubriques. */
+                    Query?: components["parameters"]["Query"];
                 };
                 header?: never;
                 path: {
@@ -3724,6 +3764,8 @@ export interface paths {
                     "Sort.By"?: components["parameters"]["Sort.By"];
                     /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
                     "Sort.Order"?: components["parameters"]["Sort.Order"];
+                    /** @description La recherche textuelle parmi toutes les rubriques. */
+                    Query?: components["parameters"]["Query"];
                 };
                 header?: never;
                 path: {
@@ -3826,6 +3868,8 @@ export interface paths {
                     "Sort.By"?: components["parameters"]["Sort.By"];
                     /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
                     "Sort.Order"?: components["parameters"]["Sort.Order"];
+                    /** @description La recherche textuelle parmi toutes les rubriques. */
+                    Query?: components["parameters"]["Query"];
                 };
                 header?: never;
                 path: {
@@ -4193,6 +4237,8 @@ export interface paths {
                     "Sort.By"?: components["parameters"]["Sort.By"];
                     /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
                     "Sort.Order"?: components["parameters"]["Sort.Order"];
+                    /** @description La recherche textuelle parmi toutes les rubriques. */
+                    Query?: components["parameters"]["Query"];
                 };
                 header?: never;
                 path: {
@@ -4295,6 +4341,8 @@ export interface paths {
                     "Sort.By"?: components["parameters"]["Sort.By"];
                     /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
                     "Sort.Order"?: components["parameters"]["Sort.Order"];
+                    /** @description La recherche textuelle parmi toutes les rubriques. */
+                    Query?: components["parameters"]["Query"];
                 };
                 header?: never;
                 path: {
@@ -4393,6 +4441,8 @@ export interface paths {
                     "Sort.By"?: components["parameters"]["Sort.By"];
                     /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
                     "Sort.Order"?: components["parameters"]["Sort.Order"];
+                    /** @description La recherche textuelle parmi toutes les rubriques. */
+                    Query?: components["parameters"]["Query"];
                 };
                 header?: never;
                 path: {
@@ -4497,6 +4547,8 @@ export interface paths {
                     "Sort.By"?: components["parameters"]["Sort.By"];
                     /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
                     "Sort.Order"?: components["parameters"]["Sort.Order"];
+                    /** @description La recherche textuelle parmi toutes les rubriques. */
+                    Query?: components["parameters"]["Query"];
                 };
                 header?: never;
                 path: {
@@ -4601,6 +4653,8 @@ export interface paths {
                     "Sort.By"?: components["parameters"]["Sort.By"];
                     /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
                     "Sort.Order"?: components["parameters"]["Sort.Order"];
+                    /** @description La recherche textuelle parmi toutes les rubriques. */
+                    Query?: components["parameters"]["Query"];
                 };
                 header?: never;
                 path: {
@@ -4705,6 +4759,8 @@ export interface paths {
                     "Sort.By"?: components["parameters"]["Sort.By"];
                     /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
                     "Sort.Order"?: components["parameters"]["Sort.Order"];
+                    /** @description La recherche textuelle parmi toutes les rubriques. */
+                    Query?: components["parameters"]["Query"];
                 };
                 header?: never;
                 path: {
@@ -4807,6 +4863,8 @@ export interface paths {
                     "Sort.By"?: components["parameters"]["Sort.By"];
                     /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
                     "Sort.Order"?: components["parameters"]["Sort.Order"];
+                    /** @description La recherche textuelle parmi toutes les rubriques. */
+                    Query?: components["parameters"]["Query"];
                 };
                 header?: never;
                 path: {
@@ -4976,6 +5034,8 @@ export interface paths {
                     "Sort.By"?: components["parameters"]["Sort.By"];
                     /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
                     "Sort.Order"?: components["parameters"]["Sort.Order"];
+                    /** @description La recherche textuelle parmi toutes les rubriques. */
+                    Query?: components["parameters"]["Query"];
                 };
                 header?: never;
                 path: {
@@ -5202,6 +5262,8 @@ export interface paths {
                     "Sort.By"?: components["parameters"]["Sort.By"];
                     /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
                     "Sort.Order"?: components["parameters"]["Sort.Order"];
+                    /** @description La recherche textuelle parmi toutes les rubriques. */
+                    Query?: components["parameters"]["Query"];
                 };
                 header?: never;
                 path: {
@@ -5439,6 +5501,8 @@ export interface paths {
                     "Sort.By"?: components["parameters"]["Sort.By"];
                     /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
                     "Sort.Order"?: components["parameters"]["Sort.Order"];
+                    /** @description La recherche textuelle parmi toutes les rubriques. */
+                    Query?: components["parameters"]["Query"];
                 };
                 header?: never;
                 path: {
@@ -5665,6 +5729,8 @@ export interface paths {
                     "Sort.By"?: components["parameters"]["Sort.By"];
                     /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
                     "Sort.Order"?: components["parameters"]["Sort.Order"];
+                    /** @description La recherche textuelle parmi toutes les rubriques. */
+                    Query?: components["parameters"]["Query"];
                 };
                 header?: never;
                 path: {
@@ -6101,6 +6167,8 @@ export interface paths {
                     "Sort.By"?: components["parameters"]["Sort.By"];
                     /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
                     "Sort.Order"?: components["parameters"]["Sort.Order"];
+                    /** @description La recherche textuelle parmi toutes les rubriques. */
+                    Query?: components["parameters"]["Query"];
                 };
                 header?: never;
                 path: {
@@ -6359,6 +6427,8 @@ export interface paths {
                     "Sort.By"?: components["parameters"]["Sort.By"];
                     /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
                     "Sort.Order"?: components["parameters"]["Sort.Order"];
+                    /** @description La recherche textuelle parmi toutes les rubriques. */
+                    Query?: components["parameters"]["Query"];
                 };
                 header?: never;
                 path: {
@@ -6668,6 +6738,8 @@ export interface paths {
                     "Sort.By"?: components["parameters"]["Sort.By"];
                     /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
                     "Sort.Order"?: components["parameters"]["Sort.Order"];
+                    /** @description La recherche textuelle parmi toutes les rubriques. */
+                    Query?: components["parameters"]["Query"];
                 };
                 header?: never;
                 path: {
@@ -6979,6 +7051,8 @@ export interface paths {
                     "Sort.By"?: components["parameters"]["Sort.By"];
                     /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
                     "Sort.Order"?: components["parameters"]["Sort.Order"];
+                    /** @description La recherche textuelle parmi toutes les rubriques. */
+                    Query?: components["parameters"]["Query"];
                 };
                 header?: never;
                 path: {
@@ -7183,6 +7257,8 @@ export interface paths {
                     "Sort.By"?: components["parameters"]["Sort.By"];
                     /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
                     "Sort.Order"?: components["parameters"]["Sort.Order"];
+                    /** @description La recherche textuelle parmi toutes les rubriques. */
+                    Query?: components["parameters"]["Query"];
                 };
                 header?: never;
                 path: {
@@ -7287,6 +7363,8 @@ export interface paths {
                     "Sort.By"?: components["parameters"]["Sort.By"];
                     /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
                     "Sort.Order"?: components["parameters"]["Sort.Order"];
+                    /** @description La recherche textuelle parmi toutes les rubriques. */
+                    Query?: components["parameters"]["Query"];
                 };
                 header?: never;
                 path: {
@@ -7870,6 +7948,8 @@ export interface paths {
                     "Sort.By"?: components["parameters"]["Sort.By"];
                     /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
                     "Sort.Order"?: components["parameters"]["Sort.Order"];
+                    /** @description La recherche textuelle parmi toutes les rubriques. */
+                    Query?: components["parameters"]["Query"];
                 };
                 header?: never;
                 path: {
@@ -8128,6 +8208,8 @@ export interface paths {
                     "Sort.By"?: components["parameters"]["Sort.By"];
                     /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
                     "Sort.Order"?: components["parameters"]["Sort.Order"];
+                    /** @description La recherche textuelle parmi toutes les rubriques. */
+                    Query?: components["parameters"]["Query"];
                 };
                 header?: never;
                 path: {
@@ -8437,6 +8519,8 @@ export interface paths {
                     "Sort.By"?: components["parameters"]["Sort.By"];
                     /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
                     "Sort.Order"?: components["parameters"]["Sort.Order"];
+                    /** @description La recherche textuelle parmi toutes les rubriques. */
+                    Query?: components["parameters"]["Query"];
                 };
                 header?: never;
                 path: {
@@ -8748,6 +8832,8 @@ export interface paths {
                     "Sort.By"?: components["parameters"]["Sort.By"];
                     /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
                     "Sort.Order"?: components["parameters"]["Sort.Order"];
+                    /** @description La recherche textuelle parmi toutes les rubriques. */
+                    Query?: components["parameters"]["Query"];
                 };
                 header?: never;
                 path: {
@@ -9057,6 +9143,8 @@ export interface paths {
                     "Sort.By"?: components["parameters"]["Sort.By"];
                     /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
                     "Sort.Order"?: components["parameters"]["Sort.Order"];
+                    /** @description La recherche textuelle parmi toutes les rubriques. */
+                    Query?: components["parameters"]["Query"];
                 };
                 header?: never;
                 path: {
@@ -9366,6 +9454,8 @@ export interface paths {
                     "Sort.By"?: components["parameters"]["Sort.By"];
                     /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
                     "Sort.Order"?: components["parameters"]["Sort.Order"];
+                    /** @description La recherche textuelle parmi toutes les rubriques. */
+                    Query?: components["parameters"]["Query"];
                 };
                 header?: never;
                 path: {
@@ -9853,6 +9943,8 @@ export interface paths {
                     "Sort.By"?: components["parameters"]["Sort.By"];
                     /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
                     "Sort.Order"?: components["parameters"]["Sort.Order"];
+                    /** @description La recherche textuelle parmi toutes les rubriques. */
+                    Query?: components["parameters"]["Query"];
                 };
                 header?: never;
                 path: {
@@ -10109,6 +10201,8 @@ export interface paths {
                     "Sort.By"?: components["parameters"]["Sort.By"];
                     /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
                     "Sort.Order"?: components["parameters"]["Sort.Order"];
+                    /** @description La recherche textuelle parmi toutes les rubriques. */
+                    Query?: components["parameters"]["Query"];
                 };
                 header?: never;
                 path: {
@@ -10596,6 +10690,8 @@ export interface paths {
                     "Sort.By"?: components["parameters"]["Sort.By"];
                     /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
                     "Sort.Order"?: components["parameters"]["Sort.Order"];
+                    /** @description La recherche textuelle parmi toutes les rubriques. */
+                    Query?: components["parameters"]["Query"];
                 };
                 header?: never;
                 path: {
@@ -10852,6 +10948,8 @@ export interface paths {
                     "Sort.By"?: components["parameters"]["Sort.By"];
                     /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
                     "Sort.Order"?: components["parameters"]["Sort.Order"];
+                    /** @description La recherche textuelle parmi toutes les rubriques. */
+                    Query?: components["parameters"]["Query"];
                 };
                 header?: never;
                 path: {
@@ -10958,6 +11056,8 @@ export interface paths {
                     "Sort.By"?: components["parameters"]["Sort.By"];
                     /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
                     "Sort.Order"?: components["parameters"]["Sort.Order"];
+                    /** @description La recherche textuelle parmi toutes les rubriques. */
+                    Query?: components["parameters"]["Query"];
                 };
                 header?: never;
                 path: {
@@ -11070,6 +11170,8 @@ export interface paths {
                     "Sort.By"?: components["parameters"]["Sort.By"];
                     /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
                     "Sort.Order"?: components["parameters"]["Sort.Order"];
+                    /** @description La recherche textuelle parmi toutes les rubriques. */
+                    Query?: components["parameters"]["Query"];
                 };
                 header?: never;
                 path: {
@@ -11275,6 +11377,8 @@ export interface paths {
                     "Sort.By"?: components["parameters"]["Sort.By"];
                     /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
                     "Sort.Order"?: components["parameters"]["Sort.Order"];
+                    /** @description La recherche textuelle parmi toutes les rubriques. */
+                    Query?: components["parameters"]["Query"];
                 };
                 header?: never;
                 path: {
@@ -11480,6 +11584,8 @@ export interface paths {
                     "Sort.By"?: components["parameters"]["Sort.By"];
                     /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
                     "Sort.Order"?: components["parameters"]["Sort.Order"];
+                    /** @description La recherche textuelle parmi toutes les rubriques. */
+                    Query?: components["parameters"]["Query"];
                 };
                 header?: never;
                 path: {
@@ -11960,6 +12066,8 @@ export interface paths {
                     "Sort.By"?: components["parameters"]["Sort.By"];
                     /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
                     "Sort.Order"?: components["parameters"]["Sort.Order"];
+                    /** @description La recherche textuelle parmi toutes les rubriques. */
+                    Query?: components["parameters"]["Query"];
                 };
                 header?: never;
                 path: {
@@ -12129,6 +12237,8 @@ export interface paths {
                     "Sort.By"?: components["parameters"]["Sort.By"];
                     /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
                     "Sort.Order"?: components["parameters"]["Sort.Order"];
+                    /** @description La recherche textuelle parmi toutes les rubriques. */
+                    Query?: components["parameters"]["Query"];
                 };
                 header?: never;
                 path: {
@@ -12355,6 +12465,8 @@ export interface paths {
                     "Sort.By"?: components["parameters"]["Sort.By"];
                     /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
                     "Sort.Order"?: components["parameters"]["Sort.Order"];
+                    /** @description La recherche textuelle parmi toutes les rubriques. */
+                    Query?: components["parameters"]["Query"];
                 };
                 header?: never;
                 path: {
@@ -12592,6 +12704,8 @@ export interface paths {
                     "Sort.By"?: components["parameters"]["Sort.By"];
                     /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
                     "Sort.Order"?: components["parameters"]["Sort.Order"];
+                    /** @description La recherche textuelle parmi toutes les rubriques. */
+                    Query?: components["parameters"]["Query"];
                 };
                 header?: never;
                 path: {
@@ -12816,6 +12930,8 @@ export interface paths {
                     "Sort.By"?: components["parameters"]["Sort.By"];
                     /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
                     "Sort.Order"?: components["parameters"]["Sort.Order"];
+                    /** @description La recherche textuelle parmi toutes les rubriques. */
+                    Query?: components["parameters"]["Query"];
                 };
                 header?: never;
                 path: {
@@ -13056,6 +13172,8 @@ export interface paths {
                     "Sort.By"?: components["parameters"]["Sort.By"];
                     /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
                     "Sort.Order"?: components["parameters"]["Sort.Order"];
+                    /** @description La recherche textuelle parmi toutes les rubriques. */
+                    Query?: components["parameters"]["Query"];
                 };
                 header?: never;
                 path: {
@@ -13235,6 +13353,8 @@ export interface paths {
                     "Sort.By"?: components["parameters"]["Sort.By"];
                     /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
                     "Sort.Order"?: components["parameters"]["Sort.Order"];
+                    /** @description La recherche textuelle parmi toutes les rubriques. */
+                    Query?: components["parameters"]["Query"];
                 };
                 header?: never;
                 path: {
@@ -13393,6 +13513,8 @@ export interface paths {
                     "Sort.By"?: components["parameters"]["Sort.By"];
                     /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
                     "Sort.Order"?: components["parameters"]["Sort.Order"];
+                    /** @description La recherche textuelle parmi toutes les rubriques. */
+                    Query?: components["parameters"]["Query"];
                 };
                 header?: never;
                 path: {
@@ -13632,6 +13754,8 @@ export interface paths {
                     "Sort.By"?: components["parameters"]["Sort.By"];
                     /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
                     "Sort.Order"?: components["parameters"]["Sort.Order"];
+                    /** @description La recherche textuelle parmi toutes les rubriques. */
+                    Query?: components["parameters"]["Query"];
                 };
                 header?: never;
                 path: {
@@ -13869,6 +13993,8 @@ export interface paths {
                     "Sort.By"?: components["parameters"]["Sort.By"];
                     /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
                     "Sort.Order"?: components["parameters"]["Sort.Order"];
+                    /** @description La recherche textuelle parmi toutes les rubriques. */
+                    Query?: components["parameters"]["Query"];
                 };
                 header?: never;
                 path: {
@@ -17969,6 +18095,8 @@ export interface components {
         "Sort.By": string;
         /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
         "Sort.Order": "A" | "D";
+        /** @description La recherche textuelle parmi toutes les rubriques. */
+        Query: string;
         /** @description L'identifiant de la civilité à manipuler. */
         IdCivilite: number;
         /** @description L'identifiant du statut juridique à manipuler. */
@@ -18367,6 +18495,7 @@ export type ParameterPaginationPage = components['parameters']['Pagination.Page'
 export type ParameterPaginationLimit = components['parameters']['Pagination.Limit'];
 export type ParameterSortBy = components['parameters']['Sort.By'];
 export type ParameterSortOrder = components['parameters']['Sort.Order'];
+export type ParameterQuery = components['parameters']['Query'];
 export type ParameterIdCivilite = components['parameters']['IdCivilite'];
 export type ParameterIdStatutJuridique = components['parameters']['IdStatutJuridique'];
 export type ParameterIdTva = components['parameters']['IdTva'];
