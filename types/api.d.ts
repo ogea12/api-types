@@ -15288,7 +15288,7 @@ export interface components {
             Client: components["schemas"]["ClientResponse"];
         };
         /** AdresseResponse */
-        AdresseResponse: (components["schemas"]["IdWrapper"] & components["schemas"]["HorodatageWrapper"] & {
+        AdresseResponse: ((components["schemas"]["IdWrapper"] & components["schemas"]["HorodatageWrapper"] & {
             /** @description La première ligne. */
             LigneUne: string;
             /** @description La seconde ligne. */
@@ -15300,7 +15300,19 @@ export interface components {
             /** @description La ville. */
             Ville: string;
             CodePays: components["schemas"]["CodePays"];
-        }) | null;
+        }) | null) & (components["schemas"]["IdWrapper"] & components["schemas"]["HorodatageWrapper"] & {
+            /** @description La première ligne. */
+            LigneUne: string;
+            /** @description La seconde ligne. */
+            LigneDeux: string | null;
+            /** @description La troisième ligne. */
+            LigneTrois: string | null;
+            /** @description Le code postal. */
+            CodePostal: string;
+            /** @description La ville. */
+            Ville: string;
+            CodePays: components["schemas"]["CodePays"];
+        });
         /** ArticleResponse */
         ArticleResponse: components["schemas"]["IdWrapper"] & components["schemas"]["HorodatageWrapper"] & {
             TypeArticle: components["schemas"]["TypeArticle"];
@@ -16927,12 +16939,17 @@ export interface components {
             Devis: components["schemas"]["DevisResponse"];
         };
         /** StatutJuridiqueResponse */
-        StatutJuridiqueResponse: (components["schemas"]["IdWrapper"] & components["schemas"]["HorodatageWrapper"] & {
+        StatutJuridiqueResponse: ((components["schemas"]["IdWrapper"] & components["schemas"]["HorodatageWrapper"] & {
             /** @description Le libellé. */
             Libelle: string;
             /** @description L'abréviation. */
             Abreviation: string;
-        }) | null;
+        }) | null) & (components["schemas"]["IdWrapper"] & components["schemas"]["HorodatageWrapper"] & {
+            /** @description Le libellé. */
+            Libelle: string;
+            /** @description L'abréviation. */
+            Abreviation: string;
+        });
         /** TvaResponse */
         TvaResponse: components["schemas"]["IdWrapper"] & components["schemas"]["HorodatageWrapper"] & {
             /** @description Le libellé. */
