@@ -2062,6 +2062,102 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/v1/calliope/utilisateur/dossiers/{IdDossier}/factures": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                /** @description L'identifiant du dossier à manipuler. */
+                IdDossier: components["parameters"]["IdDossier"];
+            };
+            cookie?: never;
+        };
+        /** @description Récupère toutes les factures pour un dossier. */
+        get: {
+            parameters: {
+                query?: {
+                    /** @description La clé du dernier résultat à parcourir. */
+                    "Pagination.Key"?: components["parameters"]["Pagination.Key"];
+                    /** @description Le numéro de la page à obtenir. */
+                    "Pagination.Page"?: components["parameters"]["Pagination.Page"];
+                    /** @description Le nombre maximum de résultats à obtenir. */
+                    "Pagination.Limit"?: components["parameters"]["Pagination.Limit"];
+                    /** @description La rubrique utilisée pour trier les résultats. */
+                    "Sort.By"?: components["parameters"]["Sort.By"];
+                    /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
+                    "Sort.Order"?: components["parameters"]["Sort.Order"];
+                };
+                header?: never;
+                path: {
+                    /** @description L'identifiant du dossier à manipuler. */
+                    IdDossier: components["parameters"]["IdDossier"];
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                200: components["responses"]["FactureAvecClientArray"];
+                400: components["responses"]["BadRequest"];
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                404: components["responses"]["NotFound"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/v1/calliope/utilisateur/dossiers/{IdDossier}/factures/{IdFacture}": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                /** @description L'identifiant du dossier à manipuler. */
+                IdDossier: components["parameters"]["IdDossier"];
+                /** @description L'identifiant de la facture à manipuler. */
+                IdFacture: components["parameters"]["IdFacture"];
+            };
+            cookie?: never;
+        };
+        /** @description Récupère une facture pour un dossier. */
+        get: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description L'identifiant du dossier à manipuler. */
+                    IdDossier: components["parameters"]["IdDossier"];
+                    /** @description L'identifiant de la facture à manipuler. */
+                    IdFacture: components["parameters"]["IdFacture"];
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                200: components["responses"]["FactureAvecClient"];
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                404: components["responses"]["NotFound"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/v1/calliope/utilisateur/dossiers/{IdDossier}/factures-commerciales": {
         parameters: {
             query?: never;
@@ -4255,6 +4351,110 @@ export interface paths {
             requestBody?: never;
             responses: {
                 200: components["responses"]["SituationAvecClientEtDevis"];
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                404: components["responses"]["NotFound"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/v1/calliope/utilisateur/dossiers/{IdDossier}/situations/{IdSituation}/factures": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                /** @description L'identifiant du dossier à manipuler. */
+                IdDossier: components["parameters"]["IdDossier"];
+                /** @description L'identifiant de la situation à manipuler. */
+                IdSituation: components["parameters"]["IdSituation"];
+            };
+            cookie?: never;
+        };
+        /** @description Récupère toutes les factures pour une situation (tenant dossier). */
+        get: {
+            parameters: {
+                query?: {
+                    /** @description La clé du dernier résultat à parcourir. */
+                    "Pagination.Key"?: components["parameters"]["Pagination.Key"];
+                    /** @description Le numéro de la page à obtenir. */
+                    "Pagination.Page"?: components["parameters"]["Pagination.Page"];
+                    /** @description Le nombre maximum de résultats à obtenir. */
+                    "Pagination.Limit"?: components["parameters"]["Pagination.Limit"];
+                    /** @description La rubrique utilisée pour trier les résultats. */
+                    "Sort.By"?: components["parameters"]["Sort.By"];
+                    /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
+                    "Sort.Order"?: components["parameters"]["Sort.Order"];
+                };
+                header?: never;
+                path: {
+                    /** @description L'identifiant du dossier à manipuler. */
+                    IdDossier: components["parameters"]["IdDossier"];
+                    /** @description L'identifiant de la situation à manipuler. */
+                    IdSituation: components["parameters"]["IdSituation"];
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                200: components["responses"]["FactureAvecClientArray"];
+                400: components["responses"]["BadRequest"];
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                404: components["responses"]["NotFound"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/v1/calliope/utilisateur/dossiers/{IdDossier}/situations/{IdSituation}/factures/{IdFacture}": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                /** @description L'identifiant du dossier à manipuler. */
+                IdDossier: components["parameters"]["IdDossier"];
+                /** @description L'identifiant de la situation à manipuler. */
+                IdSituation: components["parameters"]["IdSituation"];
+                /** @description L'identifiant de la facture à manipuler. */
+                IdFacture: components["parameters"]["IdFacture"];
+            };
+            cookie?: never;
+        };
+        /** @description Récupère une facture pour une situation (tenant dossier). */
+        get: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description L'identifiant du dossier à manipuler. */
+                    IdDossier: components["parameters"]["IdDossier"];
+                    /** @description L'identifiant de la situation à manipuler. */
+                    IdSituation: components["parameters"]["IdSituation"];
+                    /** @description L'identifiant de la facture à manipuler. */
+                    IdFacture: components["parameters"]["IdFacture"];
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                200: components["responses"]["FactureAvecClient"];
                 401: components["responses"]["Unauthorized"];
                 403: components["responses"]["Forbidden"];
                 404: components["responses"]["NotFound"];
@@ -6955,6 +7155,110 @@ export interface paths {
                 503: components["responses"]["ServiceUnavailable"];
             };
         };
+        trace?: never;
+    };
+    "/v1/calliope/utilisateur/dossiers/{IdDossier}/clients/{IdClient}/factures": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                /** @description L'identifiant du dossier à manipuler. */
+                IdDossier: components["parameters"]["IdDossier"];
+                /** @description L'identifiant du client à manipuler. */
+                IdClient: components["parameters"]["IdClient"];
+            };
+            cookie?: never;
+        };
+        /** @description Récupère toutes les factures pour un client. */
+        get: {
+            parameters: {
+                query?: {
+                    /** @description La clé du dernier résultat à parcourir. */
+                    "Pagination.Key"?: components["parameters"]["Pagination.Key"];
+                    /** @description Le numéro de la page à obtenir. */
+                    "Pagination.Page"?: components["parameters"]["Pagination.Page"];
+                    /** @description Le nombre maximum de résultats à obtenir. */
+                    "Pagination.Limit"?: components["parameters"]["Pagination.Limit"];
+                    /** @description La rubrique utilisée pour trier les résultats. */
+                    "Sort.By"?: components["parameters"]["Sort.By"];
+                    /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
+                    "Sort.Order"?: components["parameters"]["Sort.Order"];
+                };
+                header?: never;
+                path: {
+                    /** @description L'identifiant du dossier à manipuler. */
+                    IdDossier: components["parameters"]["IdDossier"];
+                    /** @description L'identifiant du client à manipuler. */
+                    IdClient: components["parameters"]["IdClient"];
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                200: components["responses"]["FactureArray"];
+                400: components["responses"]["BadRequest"];
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                404: components["responses"]["NotFound"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/v1/calliope/utilisateur/dossiers/{IdDossier}/clients/{IdClient}/factures/{IdFacture}": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                /** @description L'identifiant du dossier à manipuler. */
+                IdDossier: components["parameters"]["IdDossier"];
+                /** @description L'identifiant du client à manipuler. */
+                IdClient: components["parameters"]["IdClient"];
+                /** @description L'identifiant de la facture à manipuler. */
+                IdFacture: components["parameters"]["IdFacture"];
+            };
+            cookie?: never;
+        };
+        /** @description Récupère une facture pour un client. */
+        get: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description L'identifiant du dossier à manipuler. */
+                    IdDossier: components["parameters"]["IdDossier"];
+                    /** @description L'identifiant du client à manipuler. */
+                    IdClient: components["parameters"]["IdClient"];
+                    /** @description L'identifiant de la facture à manipuler. */
+                    IdFacture: components["parameters"]["IdFacture"];
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                200: components["responses"]["Facture"];
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                404: components["responses"]["NotFound"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
         trace?: never;
     };
     "/v1/calliope/utilisateur/dossiers/{IdDossier}/clients/{IdClient}/factures-commerciales": {
@@ -10610,6 +10914,118 @@ export interface paths {
             requestBody?: never;
             responses: {
                 200: components["responses"]["SituationAvecDevis"];
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                404: components["responses"]["NotFound"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/v1/calliope/utilisateur/dossiers/{IdDossier}/clients/{IdClient}/situations/{IdSituation}/factures": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                /** @description L'identifiant du dossier à manipuler. */
+                IdDossier: components["parameters"]["IdDossier"];
+                /** @description L'identifiant du client à manipuler. */
+                IdClient: components["parameters"]["IdClient"];
+                /** @description L'identifiant de la situation à manipuler. */
+                IdSituation: components["parameters"]["IdSituation"];
+            };
+            cookie?: never;
+        };
+        /** @description Récupère toutes les factures pour une situation (tenant client). */
+        get: {
+            parameters: {
+                query?: {
+                    /** @description La clé du dernier résultat à parcourir. */
+                    "Pagination.Key"?: components["parameters"]["Pagination.Key"];
+                    /** @description Le numéro de la page à obtenir. */
+                    "Pagination.Page"?: components["parameters"]["Pagination.Page"];
+                    /** @description Le nombre maximum de résultats à obtenir. */
+                    "Pagination.Limit"?: components["parameters"]["Pagination.Limit"];
+                    /** @description La rubrique utilisée pour trier les résultats. */
+                    "Sort.By"?: components["parameters"]["Sort.By"];
+                    /** @description L'ordre de tri pour la rubrique définie par `Sort.By`. */
+                    "Sort.Order"?: components["parameters"]["Sort.Order"];
+                };
+                header?: never;
+                path: {
+                    /** @description L'identifiant du dossier à manipuler. */
+                    IdDossier: components["parameters"]["IdDossier"];
+                    /** @description L'identifiant du client à manipuler. */
+                    IdClient: components["parameters"]["IdClient"];
+                    /** @description L'identifiant de la situation à manipuler. */
+                    IdSituation: components["parameters"]["IdSituation"];
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                200: components["responses"]["FactureArray"];
+                400: components["responses"]["BadRequest"];
+                401: components["responses"]["Unauthorized"];
+                403: components["responses"]["Forbidden"];
+                404: components["responses"]["NotFound"];
+                406: components["responses"]["NotAcceptable"];
+                500: components["responses"]["InternalServerError"];
+                503: components["responses"]["ServiceUnavailable"];
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/v1/calliope/utilisateur/dossiers/{IdDossier}/clients/{IdClient}/situations/{IdSituation}/factures/{IdFacture}": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                /** @description L'identifiant du dossier à manipuler. */
+                IdDossier: components["parameters"]["IdDossier"];
+                /** @description L'identifiant du client à manipuler. */
+                IdClient: components["parameters"]["IdClient"];
+                /** @description L'identifiant de la situation à manipuler. */
+                IdSituation: components["parameters"]["IdSituation"];
+                /** @description L'identifiant de la facture à manipuler. */
+                IdFacture: components["parameters"]["IdFacture"];
+            };
+            cookie?: never;
+        };
+        /** @description Récupère une facture pour une situation (tenant client). */
+        get: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description L'identifiant du dossier à manipuler. */
+                    IdDossier: components["parameters"]["IdDossier"];
+                    /** @description L'identifiant du client à manipuler. */
+                    IdClient: components["parameters"]["IdClient"];
+                    /** @description L'identifiant de la situation à manipuler. */
+                    IdSituation: components["parameters"]["IdSituation"];
+                    /** @description L'identifiant de la facture à manipuler. */
+                    IdFacture: components["parameters"]["IdFacture"];
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                200: components["responses"]["Facture"];
                 401: components["responses"]["Unauthorized"];
                 403: components["responses"]["Forbidden"];
                 404: components["responses"]["NotFound"];
@@ -15706,6 +16122,213 @@ export interface components {
             Code: string | null;
             Acces: components["schemas"]["Acces"];
         };
+        /** FactureResponse */
+        FactureResponse: components["schemas"]["IdWrapper"] & components["schemas"]["HorodatageWrapper"] & {
+            TypeFacture: components["schemas"]["TypeFacture"];
+            /**
+             * Format: int64
+             * @description Le numéro permanent.
+             */
+            NumeroPermanent: number | null;
+            /**
+             * Format: int64
+             * @description Le numéro provisoire.
+             */
+            NumeroProvisoire: number;
+            CodeDevise: components["schemas"]["CodeDevise"];
+            /** @description Le mode de saisie (HT ou TTC). */
+            ModeTtc: boolean;
+            /** @description La désignation du vendeur. */
+            DesignationVendeur: string;
+            /**
+             * Format: email
+             * @description Le mail du vendeur.
+             */
+            MailVendeur: string | null;
+            /** @description Le siret du vendeur. */
+            SiretVendeur: string;
+            /** @description Le numéro de TVA intracommunautaire du vendeur. */
+            NumeroIntracomVendeur: string | null;
+            AdresseVendeur: components["schemas"]["AdresseResponse"];
+            /** @description La désignation de l'acheteur. */
+            DesignationAcheteur: string;
+            /**
+             * Format: email
+             * @description Le mail de l'acheteur.
+             */
+            MailAcheteur: string | null;
+            /** @description Le siret de l'acheteur. */
+            SiretAcheteur: string | null;
+            /** @description Le numéro de TVA intracommunautaire de l'acheteur. */
+            NumeroIntracomAcheteur: string | null;
+            AdresseAcheteur: components["schemas"]["AdresseResponse"];
+            AdresseFacturation: components["schemas"]["AdresseResponse"];
+            AdresseLivraison: components["schemas"]["AdresseResponse"];
+            /**
+             * Format: float
+             * @description Le pourcentage de la remise au document.
+             */
+            PourcentageRemise: number | null;
+            /**
+             * Format: float
+             * @description Le montant HT de la remise au document.
+             */
+            MontantRemiseHt: number | null;
+            /**
+             * Format: float
+             * @description Le montant TTC de la remise au document.
+             */
+            MontantRemiseTtc: number | null;
+            /**
+             * Format: float
+             * @description Le pourcentage de la charge au document.
+             */
+            PourcentageCharge: number | null;
+            /**
+             * Format: float
+             * @description Le montant HT de la charge au document.
+             */
+            MontantChargeHt: number | null;
+            /**
+             * Format: float
+             * @description Le montant TTC de la charge au document.
+             */
+            MontantChargeTtc: number | null;
+            /**
+             * Format: float
+             * @description Le prix total net HT.
+             */
+            PrixTotalNetHt: number;
+            /**
+             * Format: float
+             * @description Le prix total net TVA.
+             */
+            PrixTotalNetTva: number;
+            /**
+             * Format: float
+             * @description Le prix total net TTC.
+             */
+            PrixTotalNetTtc: number;
+            /**
+             * Format: date
+             * @description La date de réalisation de la prestation.
+             */
+            Realisation: string;
+            /**
+             * Format: date
+             * @description La date de blocage.
+             */
+            Blocage: string | null;
+            /**
+             * Format: date
+             * @description La date d'échéance.
+             */
+            Echeance: string | null;
+        };
+        /** FactureAvecClientResponse */
+        FactureAvecClientResponse: components["schemas"]["IdWrapper"] & components["schemas"]["HorodatageWrapper"] & {
+            TypeFacture: components["schemas"]["TypeFacture"];
+            /**
+             * Format: int64
+             * @description Le numéro permanent.
+             */
+            NumeroPermanent: number | null;
+            /**
+             * Format: int64
+             * @description Le numéro provisoire.
+             */
+            NumeroProvisoire: number;
+            CodeDevise: components["schemas"]["CodeDevise"];
+            /** @description Le mode de saisie (HT ou TTC). */
+            ModeTtc: boolean;
+            /** @description La désignation du vendeur. */
+            DesignationVendeur: string;
+            /**
+             * Format: email
+             * @description Le mail du vendeur.
+             */
+            MailVendeur: string | null;
+            /** @description Le siret du vendeur. */
+            SiretVendeur: string;
+            /** @description Le numéro de TVA intracommunautaire du vendeur. */
+            NumeroIntracomVendeur: string | null;
+            AdresseVendeur: components["schemas"]["AdresseResponse"];
+            /** @description La désignation de l'acheteur. */
+            DesignationAcheteur: string;
+            /**
+             * Format: email
+             * @description Le mail de l'acheteur.
+             */
+            MailAcheteur: string | null;
+            /** @description Le siret de l'acheteur. */
+            SiretAcheteur: string | null;
+            /** @description Le numéro de TVA intracommunautaire de l'acheteur. */
+            NumeroIntracomAcheteur: string | null;
+            AdresseAcheteur: components["schemas"]["AdresseResponse"];
+            AdresseFacturation: components["schemas"]["AdresseResponse"];
+            AdresseLivraison: components["schemas"]["AdresseResponse"];
+            /**
+             * Format: float
+             * @description Le pourcentage de la remise au document.
+             */
+            PourcentageRemise: number | null;
+            /**
+             * Format: float
+             * @description Le montant HT de la remise au document.
+             */
+            MontantRemiseHt: number | null;
+            /**
+             * Format: float
+             * @description Le montant TTC de la remise au document.
+             */
+            MontantRemiseTtc: number | null;
+            /**
+             * Format: float
+             * @description Le pourcentage de la charge au document.
+             */
+            PourcentageCharge: number | null;
+            /**
+             * Format: float
+             * @description Le montant HT de la charge au document.
+             */
+            MontantChargeHt: number | null;
+            /**
+             * Format: float
+             * @description Le montant TTC de la charge au document.
+             */
+            MontantChargeTtc: number | null;
+            /**
+             * Format: float
+             * @description Le prix total net HT.
+             */
+            PrixTotalNetHt: number;
+            /**
+             * Format: float
+             * @description Le prix total net TVA.
+             */
+            PrixTotalNetTva: number;
+            /**
+             * Format: float
+             * @description Le prix total net TTC.
+             */
+            PrixTotalNetTtc: number;
+            /**
+             * Format: date
+             * @description La date de réalisation de la prestation.
+             */
+            Realisation: string;
+            /**
+             * Format: date
+             * @description La date de blocage.
+             */
+            Blocage: string | null;
+            /**
+             * Format: date
+             * @description La date d'échéance.
+             */
+            Echeance: string | null;
+            Client: components["schemas"]["ClientResponse"];
+        };
         /** FactureCommercialeResponse */
         FactureCommercialeResponse: components["schemas"]["IdWrapper"] & components["schemas"]["HorodatageWrapper"] & {
             /**
@@ -16584,6 +17207,24 @@ export interface components {
                 "application/json": components["schemas"]["DossierResponse"];
             };
         };
+        /** @description Une facture */
+        Facture: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": components["schemas"]["FactureResponse"];
+            };
+        };
+        /** @description Une facture */
+        FactureAvecClient: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": components["schemas"]["FactureAvecClientResponse"];
+            };
+        };
         /** @description Une facture commerciale */
         FactureCommerciale: {
             headers: {
@@ -16959,6 +17600,30 @@ export interface components {
                 };
             };
         };
+        /** @description Un tableau de factures */
+        FactureArray: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    Info: components["schemas"]["FactureResponse"][];
+                    Extra: components["schemas"]["ExtraWrapper"];
+                };
+            };
+        };
+        /** @description Un tableau de factures */
+        FactureAvecClientArray: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    Info: components["schemas"]["FactureAvecClientResponse"][];
+                    Extra: components["schemas"]["ExtraWrapper"];
+                };
+            };
+        };
         /** @description Un tableau de factures commerciales */
         FactureCommercialeArray: {
             headers: {
@@ -17315,6 +17980,8 @@ export interface components {
         IdFournisseurPhysique: number;
         /** @description L'identifiant du devis à manipuler. */
         IdDevis: number;
+        /** @description L'identifiant de la facture à manipuler. */
+        IdFacture: number;
         /** @description L'identifiant de la facture commerciale à manipuler. */
         IdFactureCommerciale: number;
         /** @description L'identifiant de l'acompte à manipuler. */
@@ -17567,6 +18234,8 @@ export type SchemaContactResponse = components['schemas']['ContactResponse'];
 export type SchemaDevisResponse = components['schemas']['DevisResponse'];
 export type SchemaDevisAvecClientResponse = components['schemas']['DevisAvecClientResponse'];
 export type SchemaDossierResponse = components['schemas']['DossierResponse'];
+export type SchemaFactureResponse = components['schemas']['FactureResponse'];
+export type SchemaFactureAvecClientResponse = components['schemas']['FactureAvecClientResponse'];
 export type SchemaFactureCommercialeResponse = components['schemas']['FactureCommercialeResponse'];
 export type SchemaFactureCommercialeAvecClientResponse = components['schemas']['FactureCommercialeAvecClientResponse'];
 export type SchemaFamilleArticleResponse = components['schemas']['FamilleArticleResponse'];
@@ -17610,6 +18279,8 @@ export type ResponseContact = components['responses']['Contact'];
 export type ResponseDevis = components['responses']['Devis'];
 export type ResponseDevisAvecClient = components['responses']['DevisAvecClient'];
 export type ResponseDossier = components['responses']['Dossier'];
+export type ResponseFacture = components['responses']['Facture'];
+export type ResponseFactureAvecClient = components['responses']['FactureAvecClient'];
 export type ResponseFactureCommerciale = components['responses']['FactureCommerciale'];
 export type ResponseFactureCommercialeAvecClient = components['responses']['FactureCommercialeAvecClient'];
 export type ResponseFamilleArticle = components['responses']['FamilleArticle'];
@@ -17646,6 +18317,8 @@ export type ResponseContactArray = components['responses']['ContactArray'];
 export type ResponseDevisArray = components['responses']['DevisArray'];
 export type ResponseDevisAvecClientArray = components['responses']['DevisAvecClientArray'];
 export type ResponseDossierArray = components['responses']['DossierArray'];
+export type ResponseFactureArray = components['responses']['FactureArray'];
+export type ResponseFactureAvecClientArray = components['responses']['FactureAvecClientArray'];
 export type ResponseFactureCommercialeArray = components['responses']['FactureCommercialeArray'];
 export type ResponseFactureCommercialeAvecClientArray = components['responses']['FactureCommercialeAvecClientArray'];
 export type ResponseFamilleArticleArray = components['responses']['FamilleArticleArray'];
@@ -17691,6 +18364,7 @@ export type ParameterIdFournisseur = components['parameters']['IdFournisseur'];
 export type ParameterIdFournisseurMoral = components['parameters']['IdFournisseurMoral'];
 export type ParameterIdFournisseurPhysique = components['parameters']['IdFournisseurPhysique'];
 export type ParameterIdDevis = components['parameters']['IdDevis'];
+export type ParameterIdFacture = components['parameters']['IdFacture'];
 export type ParameterIdFactureCommerciale = components['parameters']['IdFactureCommerciale'];
 export type ParameterIdAcompte = components['parameters']['IdAcompte'];
 export type ParameterIdAvoir = components['parameters']['IdAvoir'];
